@@ -1,0 +1,11 @@
+A aula de 10/8/2012 iniciou rediscutindo a questão de dominar a complexidade dos sistemas, usando a abordagem iterativa incremental, quando da construção de softwares. 
+
+Ainda sobre o tema complexidade, mostramos como a teoria geral dos sistemas (aplicada tanto a sistemas mecânicos, administrativos, biológicos, etc) ajuda explicar como se pode medir e gerenciar essa complexidade, o que pode ser muito útil na A&P do software produto. Dentre outras características, mostramos que todo sistema: (1) possui um escopo definido (tudo o que faz parte do sistema); (2) é um todo coeso, porém dividido em partes que se relacionam; (3) cada parte ou subsistema, em si, também é um sistema; (4) são os relacionamentos que definem como o sistema se comporta e qual a sua complexidade; (5) todo sistema está imerso em um ambiente, influenciando e sendo influenciado por ele.
+
+A seguir mostramos a abordagem de Iteração em Espiral. Vimos que, a rigor, é um preciosismo diferenciar o ciclo incremental do desenvolvimento espiral, mas destacamos duas facetas deste conceito criado por Barry Boehm, em 1988. O primeiro é a preocupação com riscos e suas características, como probabilidade, severidade (impacto), ações de mitigação (para diminuir a probabilidade de um risco se efetivar) e planos de contingência (para diminuir o impacto do risco, uma vez que ele venha a se efetivar). O segundo é que cada ciclo do espiral pode representar qualquer fase, atividade ou tarefa necessária do projeto.
+
+Mostramos ainda que o ciclo espiral está dividido em quatro setores, cada um com papeis distintos (definição de objetivos; avaliação e controle de riscos; desenvolvimento e validação; planejamento).
+
+Por fim, mostramos a separação de conceitos envolvendo (1) técnicas de modelagem / especificação de sistemas e (2) Metodologias / Modelo de Processo de desenvolvimento. Ao primeiro grupo, pertence a UML e, ao segundo, pertence o RUP e as técnicas ágeis. 
+
+Para estudar os conteúdos dessas aulas de processo, reforçamos a leitura (1) do capítulo 2 de Processo da obra de Ian Sommerville, Software Engineering, 9th edition, publicada no Unifor On Line e (2) do capítulo 2 da obra de Martin Fowler, UML Distilled - UML essencial é o título em português.
