@@ -1,0 +1,15 @@
+package redes2;
+
+public class EXTConfigurationFacade {
+
+	private static IAXConfiguration iaxConfiguration = new IAXConfiguration(
+			"general", "4569", "0.0.0.0", "flexflides", "high", "all", "0x18");
+
+	public static void updateIaxConfiguration(IAXConfiguration iaxConfiguration) {
+		EXTConfigurationFacade.iaxConfiguration = iaxConfiguration;
+	}
+
+	public static IAXConfiguration getIaxConfiguration() {
+		return iaxConfiguration;
+	}
+}

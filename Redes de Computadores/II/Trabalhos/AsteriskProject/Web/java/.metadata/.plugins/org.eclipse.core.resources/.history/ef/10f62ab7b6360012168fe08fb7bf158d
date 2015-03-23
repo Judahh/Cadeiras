@@ -1,0 +1,12 @@
+package redes2;
+
+import java.util.ArrayList;
+
+public class EXTContext extends BasicModel {
+
+	private ArrayList<EXTContextProcedure> procedures = new ArrayList<EXTContextProcedure>();
+	
+	public String getWriteprotect() {
+		return procedures;
+	}
+}

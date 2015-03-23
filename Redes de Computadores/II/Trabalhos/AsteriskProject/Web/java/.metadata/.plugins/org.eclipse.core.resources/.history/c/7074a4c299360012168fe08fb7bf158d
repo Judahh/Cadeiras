@@ -1,0 +1,78 @@
+<%@page import="redes2.*" %>
+<%
+IAXConfiguration iaxConfiguration = IAXConfigurationFacade.getIaxConfiguration();
+String port;
+String bindaddr;
+String context;
+String bandwidth;
+String allow;
+String tos;
+
+SIPConfiguration sipConfiguration = SIPConfigurationFacade.getSipConfiguration();
+String id = sipConfiguration.getId();
+String context = sipConfiguration.getContext();
+String bindport = sipConfiguration.getBindport();
+String bindaddr = sipConfiguration.getBindaddr();
+String tos_sip = sipConfiguration.getTos_audio();
+String tos_audio = sipConfiguration.getTos_audio();
+String tos_video = sipConfiguration.getTos_video();
+String videosupport = sipConfiguration.getVideosupport();
+String t38p_udptl = sipConfiguration.getT38p_udptl();
+String allow = sipConfiguration.getAllow();
+String limitonpeers = sipConfiguration.getLimitonpeers();
+%>
+<div id="crud" class="grid col-three-quarters mq2-col-full">
+	<h1>[<%=id%>]</h1>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id%>">
+		<ul>
+			<li>
+				<h4>id:</h4> 
+				<input type="text" name="newId" value="<%=id%>">
+			</li>
+			<li>
+				<h4>context:</h4> 
+				<input type="text" name="context" value="<%=context%>">
+			</li>
+			<li>
+				<h4>bindport:</h4> 
+				<input type="text" name="bindport" value="<%=bindport%>">
+			</li>
+			<li>
+				<h4>bindaddr:</h4> 
+				<input type="text" name="bindaddr" value="<%=bindaddr%>">
+			</li>
+			<li>
+				<h4>tos_sip:</h4> 
+				<input type="text" name="tos_sip" value="<%=tos_sip%>">
+			</li>
+			<li>
+				<h4>tos_audio:</h4> 
+				<input type="text" name="tos_audio" value="<%=tos_audio%>">
+			</li>
+			<li>
+				<h4>tos_video:</h4> 
+				<input type="text" name="tos_video" value="<%=tos_video%>">
+			</li>
+			<li>
+				<h4>videosupport:</h4> 
+				<input type="checkbox" name="videosupport" <%if("yes".equals(videosupport)){%>checked="checked"<%}%>>
+			</li>
+			<li>
+				<h4>t38p_udptl:</h4> 
+				<input type="checkbox" name="t38p_udptl" <%if("yes".equals(t38p_udptl)){%>checked="checked"<%}%>>
+			</li>
+			<li>
+				<h4>allow:</h4> 
+				<input type="text" name="allow" value="<%=allow%>">
+			</li>
+			<li>
+				<h4>limitonpeers:</h4> 
+				<input type="checkbox" name="limitonpeers" <%if("yes".equals(limitonpeers)){%>checked="checked"<%}%>>
+			</li>
+			<li>
+				<button type="submit" name="action" value="sipConfigurationSalvar" class="button fright">Salvar</button>
+			</li>
+		</ul>
+	</form>
+</div>
