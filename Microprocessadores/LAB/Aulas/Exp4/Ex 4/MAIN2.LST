@@ -1,0 +1,167 @@
+  Fri Apr 19 2013 00:31                                                                                                  Page    1
+
+
+
+
+
+
+
+               2500 A.D. 8051 Macro Assembler  -  Version 4.01a
+               ------------------------------------------------
+
+                       Input  Filename : main2.asm
+                       Output Filename : main2.obj
+
+
+    1          0000            	SearchOK                reg             20h.0
+    2          000E            	Counter                 equ             0Eh
+    3                          	
+    4   0000                   	         .chip 8051
+    5                          	
+    6   0000   74 3F           	         mov   A,#00111111b
+    7   0002   F4              	         cpl   A
+    8   0003   D2 B0           	         setb  P3.0
+    9   0005   D2 B1           	         setb  P3.1
+   10   0007   F5 80           	         mov   P0,A
+   11   0009   12 00 14        	inicio:  call  at_display
+   12   000C   12 00 61        	         call  READ_KEY
+   13   000F   30 00 F7        	         jnb   SearchOK,inicio
+   14                          	
+   15                          	;         mov   A,Counter
+   16                          	 ;        mov   dptr,#ascii
+   17                          	  ;       movc  A,@A+dptr
+   18                          	   ;      mov   B,A
+   19                          	    ;     call  Convert
+   20                          	     ;    setb  p3.1
+   21                          	;         clr   p3.0
+   22                          	 ;        mov   P0,A
+   23                          	  ;       mov   A,B
+   24                          	   ;      swap  A
+   25                          	    ;     call  Convert
+   26                          	     ;    setb  p3.0
+   27                          	      ;   clr   p3.1
+   28                          	       ;  mov   P0,A
+   29   0012   80 F5           	         sjmp  inicio
+   30                          	;---------------------------------------------------------------------
+   31   0014   E5 F0           	at_display:  mov   A,B
+   32   0016   C4              	             swap  A
+   33   0017   12 00 39        	             call  Convert
+   34   001A   C2 B1           	             clr   P3.1
+   35   001C   D2 B0           	             setb  P3.0
+   36   001E   F5 80           	             mov   P0,A
+   37   0020   12 00 34        	             call  delay
+   38   0023   E5 F0           	             mov   A,B
+   39   0025   12 00 39        	             call  Convert
+   40   0028   C2 B0           	             clr   P3.0
+   41   002A   D2 B1           	             setb  P3.1
+   42   002C   F5 80           	             mov   P0,A
+   43   002E   12 00 34        	             call delay
+   44   0031   C2 B0           	             clr   P3.0
+   45   0033   22              	             ret
+   46                          	;---------------------------------------------------------------------
+   47   0034   7D C8           	delay:   mov   R5,#200
+  Fri Apr 19 2013 00:31                                                                                                  Page    2
+
+
+
+
+   48   0036   DD FE           	         djnz  R5,$
+   49   0038   22              	         ret
+   50                          	;---------------------------------------------------------------------
+   51   0039   54 0F           	Convert: anl   A,#0Fh
+   52   003B   90 00 51        	         mov   dptr,#table
+   53   003E   93              	         movc  A,@A+dptr
+   54   003F   F4              	         cpl   A
+   55   0040   22              	         ret
+   56                          	;---------------------------------------------------------------------
+   57   0041   41 39 38 37     	ascii:   db    41h,39h,38h,37h
+   58   0045   42 36 35 34     	         db    42h,36h,35h,34h
+   59   0049   43 33 32 31     	         db    43h,33h,32h,31h
+   60   004D   44 45 30 46     	         db    44h,45h,30h,46h
+   61                          	;---------------------------------------------------------------------
+   62                          	table:   ;     .gfedcba
+   63   0051   3F              	         db    00111111b   ;0
+   64   0052   06              	         db    00000110b   ;1
+   65   0053   5B              	         db    01011011b   ;2
+   66   0054   4F              	         db    01001111b   ;3
+   67   0055   66              	         db    01100110b   ;4
+   68   0056   6D              	         db    01101101b   ;5
+   69   0057   7D              	         db    01111101b   ;6
+   70   0058   07              	         db    00000111b   ;7
+   71   0059   7F              	         db    01111111b   ;8
+   72   005A   67              	         db    01100111b   ;9
+   73   005B   77              	         db    01110111b   ;A
+   74   005C   7C              	         db    01111100b   ;b
+   75   005D   39              	         db    00111001b   ;C
+   76   005E   5E              	         db    01011110b   ;d
+   77   005F   79              	         db    01111001b   ;E
+   78   0060   71              	         db    01110001b   ;F
+   79                          	
+   80   0061                   	         include Teclado.asm
+   81   0061   C2 00           	READ_KEY: clr   SearchOK
+   82   0063   75 90 FE        	          mov   P1,#FEh                 ;alimenta a primeira linha do teclado
+   83   0066   E5 90           	          mov   A,P1                    ;Le teclado
+   84   0068   B4 FE 19        	          cjne  A,#FEh,leu              ;Compara o valor lido com FEh:
+   85   006B   75 90 FD        	          mov   P1,#FDh                                  ;Se for igual nenhuma tecla da primeira lin
+                                ha foi pressionada continua executando
+   86   006E   E5 90           	          mov   A,P1                                     ;Se for diferente uma tecla da primeira lin
+                                ha foi pressionado, vai para o subprograma LEU
+   87   0070   B4 FD 11        	          cjne  A,#FDh,leu
+   88   0073   75 90 FB        	          mov   P1,#FBh
+   89   0076   E5 90           	          mov   A,P1
+   90   0078   B4 FB 09        	          cjne  A,#FBh,leu
+   91   007B   75 90 F7        	          mov   P1,#F7h
+   92   007E   E5 90           	          mov   A,P1
+   93   0080   B4 F7 01        	          cjne  A,#F7h,leu
+   94   0083   22              	          ret
+   95                          	;-------------------------------------------------------------------------------------
+   96   0084   F5 F0           	leu:                       mov   B,A
+   97   0086   75 0E 00        	                           mov   Counter,#0
+   98   0089   90 00 AF        	                           mov   dptr,#codigo_tec
+   99   008C   E4              	procura_codigo_lido:       clr   A
+  100   008D   93              	                           movc  A,@A+dptr
+  101   008E   60 10           	                           jz    sai
+  102   0090   B5 F0 0E        	                           cjne  A,B,incr_ponteiros
+  Fri Apr 19 2013 00:31                                                                                                  Page    3
+
+
+
+
+  103   0093   90 00 C0        	procura_funcao_tecla:      mov   dptr,#funcoes_tec
+  104   0096   E5 0E           	                           mov   A,Counter
+  105   0098   93              	                           movc  A,@A+dptr
+  106   0099   D2 00           	                           setb  SearchOK
+  107   009B   F5 F0           	                           mov   B,A
+  108   009D   12 00 A6        	                           call  solta_tecla
+  109   00A0   22              	sai:                       ret
+  110                          	;-------------------------------------------------------------------------------------
+  111   00A1   A3              	incr_ponteiros:            inc   dptr
+  112   00A2   05 0E           	                           inc   Counter
+  113   00A4   80 E6           	                           sjmp  procura_codigo_lido
+  114                          	;-------------------------------------------------------------------------------------
+  115   00A6   75 90 F0        	solta_tecla:               mov   P1,#F0h
+  116   00A9   E5 90           	st:                        mov   A,P1
+  117   00AB   B4 F0 FB        	                           cjne  A,#F0h,st
+  118   00AE   22              	                           ret
+  119                          	;-------------------------------------------------------------------------------------
+  120   00AF   7E BE DE EE     	codigo_tec:                db    7Eh,BEh,DEh,EEh
+  121   00B3   7D BD DD ED     	                           db    7Dh,BDh,DDh,EDh
+  122   00B7   7B BB DB EB     	                           db    7Bh,BBh,DBh,EBh
+  123   00BB   77 B7 D7 E7 00  	                           db    77h,B7h,D7h,E7h,0
+  124                          	;-------------------------------------------------------------------------------------
+  125   00C0   0A 39 38 37     	funcoes_tec:               db    0Ah,'9','8','7'
+  126   00C4   0B 36 35 34     	                           db    0Bh,'6','5','4'
+  127   00C8   0C 33 32 31     	                           db    0Ch,'3','2','1'
+  128   00CC   0D 0E 30 0F     	                           db    0Dh,0Eh,'0',0Fh
+  129                          	
+  130                          	
+  131                          	
+  132                          	
+  133   00D0                   	         END
+
+
+
+           Lines Assembled :  133             Assembly Errors :  0
+
+
+

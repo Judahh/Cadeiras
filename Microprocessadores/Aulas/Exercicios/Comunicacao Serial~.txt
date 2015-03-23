@@ -1,0 +1,23 @@
+1-
+.chip8051
+
+mov scon,#01010000b
+mov tmod,#00100000b
+anl pcon,#01111111b
+mov th1,#253
+mov tl1,#253
+call receive,byte
+cjne a,#0ch,cmp_at
+mov r3,#08
+mov r0,#30h
+loop:call receive_byte
+mov b,@r0
+cjne a,b,erro
+inc r0
+djne r3,loop
+erro:djnz, r3,loop
+
+receive_byte: jnb ri,$
+	      clr ri
+	      mov a,sbuf
+	      ret
