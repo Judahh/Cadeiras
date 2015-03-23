@@ -1,0 +1,11 @@
+<jsp:include page="framework/frameworkUp.jsp"/>
+<jsp:include page="sip/sipManager.jsp"/>
+<div class="home-page main">
+	<section class="grid-wrap" >
+		<header class="grid col-full">
+			<hr><p class="fleft">Extensions</p>
+		</header>
+		<jsp:include page="sip/sipLista.jsp"/>	
+	</section>
+</div>
+<jsp:include page="framework/frameworkDown.jsp"/>

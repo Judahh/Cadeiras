@@ -1,0 +1,33 @@
+package redes2.facade;
+
+import java.util.List;
+
+import util.imp.AsteriskMonitorImp;
+import util.interfaces.AsteriskMonitor;
+
+public class MonitorFacade {
+	private static AsteriskMonitor monitor = new AsteriskMonitorImp();
+	private static boolean fake = false;
+
+	public static String getSip() {
+		if (fake) {
+			return "Teste";
+		} else {
+			List<String>[] listaSip = monitor.getSip();
+			String toReturn = "";
+			for (List<String> list : listaSip) {
+				for (String str : list) {
+					toReturn += "\n" + str;
+				}
+			}
+			return toReturn;
+		}
+	}
+	
+	public static String getASD(){
+		String toReturn = "";
+//		monitor.getQueues()
+		
+		return toReturn;
+	}
+}

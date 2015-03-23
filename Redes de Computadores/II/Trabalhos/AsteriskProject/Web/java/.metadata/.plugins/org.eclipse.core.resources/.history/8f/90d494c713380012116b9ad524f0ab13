@@ -1,0 +1,17 @@
+package redes2;
+
+import java.util.ArrayList;
+
+public class EXTContext extends BasicModel {
+
+	private ArrayList<EXTContextNumber> procedures = new ArrayList<EXTContextNumber>();
+	
+	public EXTContext(String id, ArrayList<EXTContextNumber> procedures ){
+		this.id = id;
+		this.procedures = procedures;
+	}
+	
+	public ArrayList<EXTContextNumber> getProcedures() {
+		return procedures;
+	}
+}

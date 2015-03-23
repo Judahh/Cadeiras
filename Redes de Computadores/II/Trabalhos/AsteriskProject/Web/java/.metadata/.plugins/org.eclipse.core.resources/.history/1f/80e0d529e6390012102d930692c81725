@@ -1,0 +1,22 @@
+package redes2;
+
+import java.util.ArrayList;
+
+public class Queue extends BasicModel {
+	private ArrayList<String> members;
+
+	public Queue(String id, ArrayList<String> members) {
+		super();
+		this.id = id;
+		this.members = members;
+	}
+
+	public String getSecret() {
+		return get(secret);
+	}
+
+	public String getUsername() {
+		return get(username);
+	}
+
+}

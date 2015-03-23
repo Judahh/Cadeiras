@@ -1,0 +1,63 @@
+<%@page import="com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Default"%>
+<%@page import="redes2.*" %>
+<%
+	//Action
+String action = request.getParameter("action");
+if(action != null && !action.isEmpty()){
+	if ("iaxRamalDeletar".equals(action)) {
+		IAXRamalFacade.deleteIaxRamal(request.getParameter("id"));
+	} else if ("iaxRamalSalvar".equals(action)) {
+		String id = request.getParameter("id");
+		String newId = request.getParameter("newId");
+		String callerid = request.getParameter("callerid");
+		String type = request.getParameter("type");
+		String defaultuser = request.getParameter("defaultuser");
+		String secret = request.getParameter("secret");
+		String context = request.getParameter("context");
+		String host = request.getParameter("host");
+		String auth = request.getParameter("auth");
+		String transfer = "";
+		if(request.getParameter("transfer") == null){
+			transfer = "no";
+		}else{
+			transfer = "yes";
+		}
+		String requiredcalltoken = "";
+		if(request.getParameter("requiredcalltoken") == null){
+			requiredcalltoken = "no";
+		}else{
+			requiredcalltoken = "yes";
+		}
+		IAXRamalFacade.updateIaxRamal(id, new IAXRamal(newId, callerid, type, defaultuser, secret, context, host, auth, transfer, requiredcalltoken));
+	} else if ("iaxConfigurationSalvar".equals(action)) {
+		String newId = request.getParameter("newId");
+		String context = request.getParameter("context");
+		String bindport = request.getParameter("bindport");
+		String bindaddr = request.getParameter("bindaddr");
+		String tos_sip = request.getParameter("tos_sip");
+		String tos_audio = request.getParameter("tos_audio");
+		String tos_video = request.getParameter("tos_video");
+		String videosupport = null;
+		if(request.getParameter("videosupport") == null){
+			videosupport = "no";
+		}else{
+			videosupport = "yes";
+		}
+		String t38p_udptl = null;
+		if(request.getParameter("t38p_udptl") == null){
+			t38p_udptl = "no";
+		}else{
+			t38p_udptl = "yes";
+		}
+		String allow = request.getParameter("allow");
+		String limitonpeers = null;
+		if(request.getParameter("limitonpeers") == null){
+			limitonpeers = "no";
+		}else{
+			limitonpeers = "yes";
+		}
+		IAXConfigurationFacade.updateIaxConfiguration(new IAXConfiguration(newId, port, bindaddr, context, bandwidth, allow, tos));
+		SIPConfigurationFacade.updateSipConfiguration(new SIPConfiguration(newId, context, bindport, bindaddr, tos_sip, tos_audio, tos_video, videosupport,t38p_udptl, allow, limitonpeers));
+	}
+}
+%>

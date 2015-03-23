@@ -1,0 +1,52 @@
+package redes2;
+
+public class EXTConfiguration extends BasicModel {
+	private String static;
+	private String writeprotect;
+
+	public EXTConfiguration(String id, String port, String bindaddr,
+			String context, String bandwidth, String allow, String tos) {
+		this.id = id;
+		this.port = port;
+		this.bindaddr = bindaddr;
+		this.context = context;
+		this.bandwidth = bandwidth;
+		this.allow = allow;
+		this.tos = tos;
+	}
+
+	public String getId() {
+		return get(id);
+	}
+
+	public String getPort() {
+		return get(port);
+	}
+
+	public String getBindaddr() {
+		return get(bindaddr);
+	}
+
+	public String getContext() {
+		return get(context);
+	}
+
+	public String getBandwidth() {
+		return get(bandwidth);
+	}
+
+	public String getAllow() {
+		return get(allow);
+	}
+
+	public String getTos() {
+		return get(tos);
+	}
+
+	private String get(String var) {
+		if (var == null) {
+			return "";
+		}
+		return var;
+	}
+}

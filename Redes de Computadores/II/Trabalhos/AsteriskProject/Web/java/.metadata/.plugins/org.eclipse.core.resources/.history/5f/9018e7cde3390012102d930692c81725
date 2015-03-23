@@ -1,0 +1,19 @@
+package redes2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import util.imp.AgentsImp;
+import util.interfaces.Agents;
+
+public class MonitorFacade {
+	private static List<SIPRamal> ramais = new ArrayList<SIPRamal>();
+
+	private static Agents agents = new AgentsImp();
+	private static boolean fake = false;
+
+	
+	public static void teste(){
+		
+	}
+}

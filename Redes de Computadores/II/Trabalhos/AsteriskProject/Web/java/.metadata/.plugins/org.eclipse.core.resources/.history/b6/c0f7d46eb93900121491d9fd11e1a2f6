@@ -1,0 +1,15 @@
+package redes2;
+
+public class EXTConfigurationFacade {
+
+	private static EXTConfiguration extConfiguration = new EXTConfiguration(
+			"general", "yes", "no");
+
+	public static void updateExtConfiguration(EXTConfiguration extConfiguration) {
+		EXTConfigurationFacade.extConfiguration = extConfiguration;
+	}
+
+	public static EXTConfiguration getExtConfiguration() {
+		return extConfiguration;
+	}
+}

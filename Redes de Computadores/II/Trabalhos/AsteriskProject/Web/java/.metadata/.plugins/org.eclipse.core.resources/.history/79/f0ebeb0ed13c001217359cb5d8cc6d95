@@ -1,0 +1,44 @@
+<%@page import="java.util.*"%>
+<%@page import="redes2.*" %>
+<%@page import="redes2.facade.*" %>
+<%@page import="model.*" %>
+<%@page import="util.*" %>
+<%@page import="util.imp.*" %>
+<%@page import="util.interfaces.*" %>
+<%@page import="view.*" %>
+<div id="info" class="grid col-three-quarters mq2-col-full">
+
+<div class="fright">
+	<h4>Sip:</h4>
+	<jsp:include page="monInfoSip.jsp"/>
+	<br>
+	<h4>Iax:</h4>
+	<jsp:include page="monInfoIax.jsp"/>
+</div>
+<div class="fleft">
+	<h4>Agents:</h4>
+	<jsp:include page="monInfoAgents.jsp"/>
+	
+	<br>
+	
+	<h4>Core Show Channels:</h4>
+	<jsp:include page="monInfoCore.jsp"/>
+	
+	<br>
+	
+	<h4>Queues:</h4>
+	<jsp:include page="monInfoQueue.jsp"/>
+
+	<form method="post" id="atualizar">
+		<button type="submit" name="action" value="" class="button fleft">Atualizar</button>
+	</form>
+</div>
+</div>
+
+<script> 
+var auto_refresh = setInterval(
+function()
+{
+$('#atualizar').submit();
+}, 5000);
+</script>
