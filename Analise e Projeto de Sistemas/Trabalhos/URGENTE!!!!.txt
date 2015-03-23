@@ -1,0 +1,3 @@
+-Ver coisas que faltam pelo Draft (na pasta Drafts), pelos trabalhos passados (na pasta Trabalhos passados), pelo documento do Excel de Notas e pelo memo (ambos na pasta Memos e Notas).
+-Fazer casos de uso no Projeto do Astah PocketDoctor (Na pasta do Projeto que contém o seu nome, todas estão localizadas na pasta Casos de Uso).
+-Não criar varias versões de um mesmo arquivo no DropBox, caso seja necessário criar um BackUp crie apenas no seu computador.
