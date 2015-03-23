@@ -1,0 +1,20 @@
+Na aula de 1/8/2012, nós realizamos uma introdução à disciplina, comentando sobre a programação e a bibliografia. 
+Recomendamos a obra dos três amigos (Ivar Jacobson, Grady Booch, James E. Rumbaugh: The unified software development process - the complete guide to the unified process from the original designers. Addison-Wesley, 1999) e outras duas obras como fontes primárias de estudos (Philippe Kruchten: The Rational Unified Process-An Introduction. Addison-Wesley, 3rd edition, 2003 e Martin Fowler: UML Distilled: A Brief Guide to the Standard Object Modeling Language, Addison-Wesley, 3rd edition, 2004). Estes livros fazem parte do acervo da biblioteca da Unifor e os dois últimos possuem versões em português. Outros papers, artigos, tutoriais, slides e fontes serão usados como complementação do estudo. Para estudr mais sobre requisitos e o modelo de caso de uso recomendamos COCKBURN, Alistair. Escrevendo Casos de Uso Eficazes. Bookman, 2004.
+
+
+Foi realizada uma discussão sobre o conceito de Processo de Software e Modelo de Processo de Software. Também discutimos o que diferencia as atividades de Requisitos, Análise e Projeto, concentrando-se em comparar os objetivos, artefatos e papeis envolvidos com essas disciplinas.
+
+
+Em resumo, a discussão em grupo concordou que a disciplina de requisitos preocupa-se em levantar as funcionalidades do software, definindo e priorizando o que será construído, mostrando que restrições se aplicam ao software e o que está fora de escopo, firmando um acordo formal (baseline) ou tácito com o cliente / usuário.
+
+
+Já a disciplina de análise ainda preocupa-se com o que será construído, mas com duas diferenças fundamentais: (1) a especificação é construída na linguagem dos desenvolvedores (diagramas e modelos UML – por exemplo) e (2) ocorrem refinamentos, eliminando-se ambiguidades, redundâncias, inconsistências, etc.
+
+
+Durante o projeto, é definido como o sistema será implementado (atividade seguinte), construindo-se a arquitetura da aplicação e o design como um todo, de acordo com as restrições não funcionais (por exemplo, confiabilidade, manutenibilidade, tolerância a falhas, disponibilidade, recuperabilidade, etc) e com o ambiente físico de execução (plataforma, ambientes, protocolos, linguagens, frameworks, legados, etc).
+
+
+Por fim, deixamos claro nesta aula que o curso terá abordagens prática e teórica. Ambas farão parte da pontuação das notas de cada aluno, trabalhando de forma individual e em equipe.
+
+
+Para a próxima aula, discutiremos mais sobre Processo, Modelos de Processo e detalharemos as disciplinas, atividades, papéis e artefatos que importam para o nosso escopo de estudo. Vamos entender quais as diferenças entre as disciplinas de Requisitos, Análise e Projeto. Par a melhor acompanhamento da aula, sugiro a leitura prévia do capítulo de processo da obra de Ian Sommerville, Software Engineering, 8 edition (capítulo 4 – em edições diferentes o capítulo muda, ver índice).

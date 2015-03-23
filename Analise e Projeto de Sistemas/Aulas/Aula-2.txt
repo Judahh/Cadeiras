@@ -1,0 +1,23 @@
+Na aula de 3/8/2012, nós apresentamos alguns conceitos gerais aplicáveis a todos os Modelos de Processo de Software. 
+Começamos definindo Software Produto e mostrando que o mesmo é composto pelos artefatos gerados em todas as atividades de um Processo. Depois apresentamos as razões para se efetuar manutenção em software, destacando exemplos de erro, evolução, prevenção e demandas advindas do ambiente.
+
+
+A seguir mostramos a curvas de erros do software, destacando que, estatisticamente, todos os softwares possuem erros e que cada manutenção acrescenta novos erros ao software. Ao longo de todo o ciclo de vida, o software tende a chegar a um estágio de difícil manutenção, quando podem entrar em cena necessárias ações de Reengenharia ou simplesmente se descomissionar (aposentar) o software.
+
+
+Enfocamos também um enfoque sobre custo e tempo gasto em cada atividade do Processo e percebemos que a manutenção (quando um software entra em operação) tem a maior fatia do bolo. Daí as técnicas principais de A&P (nosso foco na disciplina) darem muita ênfase à tornar o software o mais extensível possível.
+
+
+Por fim, fornecemos uma visão geral sobre os modelos de processo clássicos. Frisamos que, na prática, nenhum modelo genérico de processo é usado de forma pura. Em geral, combinam-se características selecionadas de vários modelos na montagem de um processo em uma organização que desenvolve software. Para efeito de estudo, porém, analisamos os modelos em separado.
+
+
+Assim, o modelo em Cascata tem como características a separação entre fases (atividades) e a progressão linear. Da mesma forma como ocorre em uma cascata de água real, a água desce uma elevação, um degrau (fase) por vez, e não retorna mais ao topo.
+
+
+O modelo Evolucionário (também chamado por outros autores como Iterativo – não confundir com interativo), em vez de quebrar um projeto em atividades (como o Cascata), quebra-o por funcionalidades. Além disso, em geral há uma atividade de estudo ou prototipação (não confundir com protótipo de interface), antes que as iterações do modelo evolucionário realmente iniciem.
+
+
+Já o modelo baseado em componentes usa ativos (componentes próprios) ou componentes e frameworks de terceiros para a montagem de aplicações, gerando esforço de integração entre esses componentes e, por vezes, renegociando requisitos. Em contrapartida, oferece ganhos em custo, prazo e qualidade.
+
+
+Para estudar os conteúdos dessas aulas de processo, reforçamos a leitura (1) do capítulo 2 de Processo da obra de Ian Sommerville, Software Engineering, 9th edition e (2) do capítulo 2 da obra de Martin Fowler, UML Distilled - UML essencial é o título em português.
