@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+
+	<h:outputStylesheet library="css" name="fonte.css" />
+	<h:outputStylesheet library="css" name="imagens.css" />
+	<h:outputStylesheet library="css" name="datatable.css" />
+
+</h:head>
+<h:body>
+	
+<p:panel header = "Análise de Desempenho (Sistemas Distribuidos)" style="text-align:center">	
+	<h:form prependId="false" id="formDesempenho">
+	
+	
+	<!-- Executar metodos ao carregar pagina -->
+	
+		<h:outputLabel value ="#{desempenhoMB.heap()}"></h:outputLabel>
+		<h:outputLabel value ="#{desempenhoMB.tim()}"></h:outputLabel>
+		<h:outputLabel value ="#{desempenhoMB.merge()}"></h:outputLabel>
+		<h:outputLabel value ="#{desempenhoMB.insert()}"></h:outputLabel>
+		<h:outputLabel value ="#{desempenhoMB.quick()}"></h:outputLabel>
+		
+	<!-- Executar metodos ao carregar pagina -->	
+	
+	
+	
+		<p:panelGrid styleClass="semBorda">
+			<p:row>
+				<p:column>
+					<!-- <p:commandButton value="HeapSort" id="heap"
+						action="#{desempenhoMB.teste(1)}" update=":teste">
+					</p:commandButton> -->
+					<p:commandButton value="HeapSort" id="heap"
+						action="#{desempenhoMB.heap()}">
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<!-- <p:commandButton value="InsertionSort" id="insert"
+						action="#{desempenhoMB.teste(2)}" update=":teste">
+					</p:commandButton> -->
+					<p:commandButton value="InsertionSort" id="insert"
+						action="#{desempenhoMB.insert()}" >
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<!-- <p:commandButton value="MergeSort" id="merge"
+						action="#{desempenhoMB.teste(3)}" update=":teste">
+					</p:commandButton> -->
+					<p:commandButton value="MergeSort" id="merge"
+						action="#{desempenhoMB.merge()}" >
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<!-- <p:commandButton value="QuickSort" id="quick"
+						action="#{desempenhoMB.teste(4)}" update=":teste">
+					</p:commandButton> -->
+					<p:commandButton value="QuickSort" id="quick"
+						action="#{desempenhoMB.quick()}" >
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<p:commandButton value="RadixSort" id="radix"
+						action="#{desempenhoMB.teste(5)}" update=":teste" disabled="true">
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<!-- <p:commandButton value="TimSort" id="tim"
+						action="#{desempenhoMB.teste(6)}" update=":teste">
+					</p:commandButton> -->
+					<p:commandButton value="TimSort" id="tim"
+						action="#{desempenhoMB.tim()}" >
+					</p:commandButton>
+				</p:column>
+				<p:column>
+					<p:commandButton value="Todos" id="todos"
+						action="#{desempenhoMB.teste(7)}" update=":teste" disabled = "true">
+					</p:commandButton>
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+	</h:form>
+
+	<p:outputPanel id="teste" rendered = "false">
+		<h:form>
+			<p:panel id="teste1" rendered="#{desempenhoMB.tipo == 1}"
+				header="HeapSort" styleClass="semBorda">
+				<p:panelGrid styleClass="semBorda">
+					<p:row>
+						<p:column>
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.heap()}"
+								update="resultadoHeap"></p:commandButton>
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação" />
+							<h:outputLabel id="resultadoHeap"
+								value="#{desempenhoMB.showHeap()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+
+		<h:form>
+			<p:panel id="teste2" rendered="#{desempenhoMB.tipo == 2}"
+				header="InsertionSort" styleClass="semBorda">
+				<p:panelGrid styleClass="semBorda" style="border:0px">
+					<p:row>
+						<p:column style="">
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:commandButton value="Ordenar"
+								action="#{desempenhoMB.insert()}" update="resultadoInsert"></p:commandButton>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação" />
+							<h:outputLabel id="resultadoInsert"
+								value="#{desempenhoMB.showInsert()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+
+		<h:form>
+			<p:panel id="teste3" rendered="#{desempenhoMB.tipo == 3}"
+				header="MergeSort" styleClass="semBorda">
+				<p:panelGrid>
+					<p:row>
+						<p:column>
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.merge()}"
+								update="resultadoMerge"></p:commandButton>
+
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação" />
+							<h:outputLabel id="resultadoMerge"
+								value="#{desempenhoMB.showMerge()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+
+		<h:form>
+			<p:panel id="teste4" rendered="#{desempenhoMB.tipo == 4}"
+				header="QuickSort" styleClass="semBorda">
+				<p:panelGrid>
+					<p:row>
+						<p:column>
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.quick()}"
+								update="resultadoQuick"></p:commandButton>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação" />
+							<h:outputLabel id="resultadoQuick"
+								value="#{desempenhoMB.showQuick()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+			
+		</h:form>
+		<p:panel id="teste5" rendered="#{desempenhoMB.tipo == 5}"
+			header="RadixSort" styleClass="semBorda">
+			<p:panelGrid>
+				<p:row>
+					<p:column>
+						<h:outputLabel
+							value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+					</p:column>
+				</p:row>
+				<p:row>
+					<p:column>
+						<h:inputText value="#{desempenhoMB.numero}" size="50" />
+					</p:column>
+				</p:row>
+				<p:row>
+					<p:column>
+						<h:form>
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.radix()}"
+								update=":resultadoRadix"></p:commandButton>
+						</h:form>
+					</p:column>
+				</p:row>
+				<p:row>
+					<p:column>
+						<h:outputLabel value="Tempo de ordenação" />
+						<h:outputLabel id="resultadoRadix"
+							value="#{desempenhoMB.showRadix()}" />
+					</p:column>
+				</p:row>
+			</p:panelGrid>
+		</p:panel>
+		
+		<h:form>
+			<p:panel id="teste6" rendered="#{desempenhoMB.tipo == 6}"
+				header="TimSort" styleClass="semBorda">
+				<p:panelGrid>
+					<p:row>
+						<p:column>
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.tim()}"
+								update="resultadoTim"></p:commandButton>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação" />
+							<h:outputLabel id="resultadoTim"
+								value="#{desempenhoMB.showTim()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+
+		<h:form>
+			<p:panel id="teste7" rendered="#{desempenhoMB.tipo == 7}"
+				header="Todos" styleClass="semBorda">
+				<p:panelGrid styleClass="semBorda">
+					<p:row>
+						<p:column>
+							<h:outputLabel
+								value="Quantos numeros deseja ordenar? 
+								(O vetor será criado com variação de 1.000.000 elementos)" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:inputText value="#{desempenhoMB.numero}" size="50" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:commandButton value="Ordenar" action="#{desempenhoMB.todos()}"
+								update="resultadoHeap2 resultadoInsert2 resultadoQuick2 resultadoMerge2 resultadoTim2"></p:commandButton>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação Heap:" />
+							<h:outputLabel id="resultadoHeap2"
+								value="#{desempenhoMB.showHeap()}" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação Insert:" />
+							<h:outputLabel id="resultadoInsert2"
+								value="#{desempenhoMB.showInsert()}" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação Quick:" />
+							<h:outputLabel id="resultadoQuick2"
+								value="#{desempenhoMB.showQuick()}" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação Tim:" />
+							<h:outputLabel id="resultadoTim2"
+								value="#{desempenhoMB.showTim()}" />
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="Tempo de ordenação Merge:" />
+							<h:outputLabel id="resultadoMerge2"
+								value="#{desempenhoMB.showMerge()}" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:panel>
+		</h:form>
+		
+	</p:outputPanel>
+</p:panel>	
+</h:body>
+</html>

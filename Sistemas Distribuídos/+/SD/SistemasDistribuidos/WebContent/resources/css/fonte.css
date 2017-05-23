@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+*{
+	font-family: arial;
+	font-size:12px;
+}
+
+.printBorders{
+	
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+}

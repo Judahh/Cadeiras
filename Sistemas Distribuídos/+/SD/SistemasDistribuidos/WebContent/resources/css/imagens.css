@@ -1,0 +1,7 @@
+.ui-layout-north .ui-layout-unit-content {
+	
+	background-image: url("../images/asterisk.jpg");	
+	background-repeat:no-repeat;	
+	background-position:center;
+	background-origin:content-box;
+}	

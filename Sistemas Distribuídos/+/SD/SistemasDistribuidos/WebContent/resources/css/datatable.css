@@ -1,0 +1,27 @@
+.green {
+	background-color: #CBFF97; !important;
+	background-image:none; !important;
+	
+}
+
+.red {
+	background: #FF8A8A; !important;
+	background-image:none; !important;
+}
+
+.semBorda{
+	border: none !important;
+}
+
+.ui-panelgrid td, .ui-panelgrid tr
+{
+    border-style: none !important
+}
+
+/* .ui-datatable .ui-datatable-data .green td{ */  
+    /* background: #FF8A8A; !important;   */
+/* } */
+  
+/* .ui-datatable .ui-datatable-data .red td{ */  
+    /* background-color: #CBFF97; !important;   */
+/* } */

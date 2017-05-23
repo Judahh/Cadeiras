@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+#centro {
+ 
+width:200px;      // largura
+height:200px;     // altura
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-100px;
+margin-left:-100px;
+
+}
+
+#centroLogin{
+	position: absolute;
+	left: 340px;
+	top: 230px;
+}
