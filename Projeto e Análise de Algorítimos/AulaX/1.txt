@@ -1,0 +1,15 @@
+To=0
+T[n]=2T[n-1]+1
+
+relação recursiva
+T[n] = 2T[n-1] + 1
+____   _______  ___
+2^n      2^n    2^n
+
+T[n] = S[n-1]
+
+final: T[n]=2^n-1
+forma fechada
+
+
+soma dos quadrados....
