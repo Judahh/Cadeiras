@@ -1,0 +1,26 @@
+Na aula de 6/8/2012, iniciamos o estudo dos Modelos Clássicos Processo de software revisando os conceitos relacionados a Processo, suas as quatro macros atividades principais (especificação, desenvolvimento, validação e evolução) e revisitando a conceituação de verificação e validação discutido na aula anterior. 
+Depois iniciamos o estudo do Modelo Cascata (Waterfall). Este modelo caracteriza-se pela progressão linear das suas atividades, de tal forma que uma atividade só inicia após a anterior haver sido completada. Tampouco volta-se a uma atividade anterior quando a mesmo tiver sido completada.
+
+
+E isso pode ser um problema, pois demonstramos que os requisitos de sistemas de negócios (comércio, finanças, bancos, serviços, etc) são muito voláteis e mudam constantemente. Logo, pode haver problemas se esse modelo for aplicado, em um ciclo longo, a um sistema cujos requisitos podem mudar ao longo do tempo. Há ainda problemas inerentes á própria natureza da especificação de requisitos, como o fato da mesma poder, com certa frequência, ser ambígua, redundante, inconsistente e incompleta.
+
+
+Outra característica do Modelo Cascata é que os testes de integração e de sistema são realizados mais para o final do ciclo, potencialmente aumentando a sua complexidade e os custos dessa atividade.
+
+
+Depois iniciamos o estudo das características do modelo de processo Evolucionário, fazendo uma comparação com o Modelo em Cascata, principalmente no tocante a como os dois modelos tratam a complexidade do processo de desenvolvimento de software (Cascata divide o processo em atividades e o Evolucionário em subconjuntos de requisitos).
+
+
+Ficou claro que, seja qual for a estratégia adotada, no modelo evolucionário há uma ação inicial de exploração de requisitos para fechar escopo, restrições e elementos relacionados ao desenvolvimento em geral. A partir daí, o desenvolvimento evolui com liberação de versões intermediárias do sistema (de acordo com os requisitos priorizados), até que se obtenha a versão final.
+
+
+Feedback (com testes realizados a partir do início e por todo o ciclo do desenvolvimento), melhores oportunidades para provisões de tempo e custo, bem como melhor motivação das equipes envolvidas (desenvolvimento e usuários) foram pontos fortes destacados do Modelo Evolucionário.
+
+
+Como desvantagens (pontos de preocupação) do Modelo Evolutivo, destacamos a possibilidade de podermos ter uma solução menos estruturada (em relação ao Modelo Cascata), pois não se possui todos os requisitos em mãos na hora de definir a arquitetura do software, bem como a ausência de marcos claros, também em comparação com o Modelo Cascata.
+
+
+O Modelo Evolucionário prevê duas formas de iniciar o processo de desenvolvimento: através de throw away prototypes (protótipos descartáveis para entendimento dos requisitos) ou exploratory development (construção de um protótipo inicial com requisitos em alto nível, evoluindo com detalhamentos e incorporação de novas features até a versão final do sistema).
+
+
+Para estudar os conteúdos dessas aulas de processo, reforçamos a leitura (1) do capítulo 2 de Processo da obra de Ian Sommerville, Software Engineering, 9th edition, publicada no Unifor On Line e (2) do capítulo 2 da obra de Martin Fowler, UML Distilled - UML essencial é o título em português.
