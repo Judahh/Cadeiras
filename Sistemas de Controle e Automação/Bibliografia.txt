@@ -1,0 +1,12 @@
+Bibliografia básica
+·         NISE, Norman. Engenharia de sistemas de controle. 5. ed. Rio de Janeiro: LTC, 2009.
+·         OGATA, Katsuhiko. Engenharia de controle moderno. 4. ed. Rio de Janeiro: Prentice-Hall do Brasil, 2003.
+·         SILVEIRA, P. R. Automação e controle discreto. 3. ed. São Paulo: Érica, 2001.
+ 
+Bibliografia complementar
+·         D’AZZO, J.; HOUPIS, C. H. Análise e projeto de sistemas de controle lineares. 2. ed. São Paulo: Guanabara, 1984.
+·         DORF, Richard C.; BISHOP, Robert H. Sistemas de controle modernos. 8. Ed. Rio de Janeiro: LTC, 2001.
+·         KUO, Benjamin C. Sistemas de controle automático. 4. ed. Rio de Janeiro: Prentice-Hall do Brasil, 1985.
+·         PHILLLIPS, Charles L.; HARBOR, Royce D. Sistemas de controle e realimentação. São paulo: Makron Books, 1997.
+·         PRUDENTE, Francesco. Automação industrial. São Paulo: LTC, 2008.
+ 
