@@ -1,0 +1,46 @@
+login as: geneflides
+geneflides@10.20.0.152's password:
+Last login: Mon Nov  5 15:26:38 2012 from 10.20.0.136
+[geneflides@unilabpbx ~]$ su -
+Password:
+[root@unilabpbx ~]#
+[root@unilabpbx ~]#
+[root@unilabpbx ~]#
+[root@unilabpbx ~]# asterisk -r
+Asterisk 1.6.2.16.1, Copyright (C) 1999 - 2010 Digium, Inc. and others.
+Created by Mark Spencer <markster@digium.com>
+Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.
+This is free software, with components licensed under the GNU General Public
+License version 2 and other licenses; you are welcome to redistribute it under
+certain conditions. Type 'core show license' for details.
+=========================================================================
+Connected to Asterisk 1.6.2.16.1 currently running on unilabpbx (pid = 2075)
+Verbosity is at least 3
+unilabpbx*CLI> manager show command
+Usage: manager show command <actionname> [<actionname> [<actionname> [...]]]
+        Shows the detailed description for a specific Asterisk manager interface command.
+unilabpbx*CLI> manager
+reload  set     show
+unilabpbx*CLI> manager show comm
+command   commands
+unilabpbx*CLI> manager show command d
+DAHDIDialOffhook   DAHDIDNDoff        DAHDIDNDon         DAHDIHangup
+DAHDIRestart       DAHDIShowChannels  DAHDITransfer      DBDel
+DBDelTree          DBPut              DBGet
+unilabpbx*CLI> manager show command DBGet
+Action: DBGet
+Synopsis: Get DB Entry
+Privilege: system,reporting,all
+
+unilabpbx*CLI> database show
+/Queue/PersistentMembers/administracao            : SIP/4001;0;0;SIP/4001;SIP/4001|IAX2/1002;0;0;IAX2/1002;IAX2/1002
+/Queue/PersistentMembers/callcenter               : IAX2/1004;0;0;IAX2/1004;IAX2/1004|SIP/8014;0;0;SIP/8014;SIP/8014|SIP/4002;0;0;SIP/4002;SIP/4002
+/Queue/PersistentMembers/financeiro               : IAX2/1003;0;0;IAX2/1003;IAX2/1003|SIP/4003;0;0;SIP/4003;SIP/4003
+/dundi/secret                                     : wo+Pd0iaj3C3qkkB+d81Og==;tRUhDDieNykRQFNhPKQsXQ==
+/dundi/secretexpiry                               : 1352307197
+5 results found.
+unilabpbx*CLI> exit
+[root@unilabpbx ~]#
+[root@unilabpbx ~]# cd /etc/asterisk
+[root@unilabpbx asterisk]#
+[root@unilabpbx asterisk]# vi sip.conf

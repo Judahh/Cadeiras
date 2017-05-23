@@ -1,0 +1,17 @@
+#include "MainApplication.h"
+
+using namespace std;
+
+MainApplication::MainApplication(void)
+{
+}
+
+
+MainApplication::~MainApplication(void)
+{
+}
+
+int main()
+{
+	return 0;
+}

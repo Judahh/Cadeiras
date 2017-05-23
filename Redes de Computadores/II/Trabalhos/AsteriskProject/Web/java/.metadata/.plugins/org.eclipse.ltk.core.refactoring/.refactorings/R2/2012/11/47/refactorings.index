@@ -1,0 +1,52 @@
+1353358849792	Rename local variable 'id'
+1353358879104	Rename local variable 'id'
+1353359166389	Delete element
+1353360935515	Delete element
+1353370835940	Delete elements
+1353370838227	Copy files
+1353370850623	Rename resource 'sipConfigurationCrud.jsp'
+1353370855358	Rename resource 'sipLista.jsp'
+1353370859183	Rename resource 'sipManager.jsp'
+1353370863010	Rename resource 'sipRamalCrud.jsp'
+1353370899667	Rename type 'Ramal'
+1353370915896	Rename package 'SIP'
+1353370923430	Copy compilation unit
+1353371296326	Delete element
+1353371389625	Rename method 'getRamais'
+1353371395881	Rename method 'addRamal'
+1353371399097	Rename method 'deleteRamal'
+1353371407581	Rename method 'updateRamal'
+1353371432505	Rename method 'updateRamal'
+1353371442638	Rename local variable 'ramalStr'
+1353371448088	Rename local variable 'ramal'
+1353371455742	Rename method 'getRamal'
+1353371553456	Rename local variable 'ramal'
+1353371561266	Rename local variable 'ramalStr'
+1353371571624	Rename local variable 'ramal'
+1353371580877	Rename local variable 'ramalStr'
+1353371586761	Rename local variable 'ramal'
+1353371600332	Rename local variable 'ramal'
+1353371606613	Rename local variable 'sipRamalStr'
+1353372292245	Rename type 'SIPFacade'
+1353372313476	Copy compilation unit
+1353372475553	Rename type 'SipRamal'
+1353372480748	Rename type 'IaxConfiguration'
+1353372485359	Rename type 'SipConfiguration'
+1353373479676	Delete elements
+1353373490267	Copy files
+1353373505328	Rename resource 'sipConfigurationCrud.jsp'
+1353373510220	Rename resource 'sipLista.jsp'
+1353373513766	Rename resource 'sipManager.jsp'
+1353373517349	Rename resource 'sipRamalCrud.jsp'
+1353373552587	Copy compilation unit
+1353373620261	Rename field 'username'
+1353373637431	Rename field 'canreinvite'
+1353373642459	Rename field 'dtmfmode'
+1353373650644	Rename field 'nat'
+1353373775132	Copy file
+1353373849256	Copy compilation unit
+1353374182831	Copy compilation unit
+1353530300661	Delete element
+1353530303959	Delete element
+1353530959577	Extract local variable 'sessionName'
+1353801597220	Delete element

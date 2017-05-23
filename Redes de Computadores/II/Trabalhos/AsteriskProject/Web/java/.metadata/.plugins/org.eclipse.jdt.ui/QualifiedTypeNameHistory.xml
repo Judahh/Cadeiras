@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="SIP.SIPFake"/>
+<fullyQualifiedTypeName name="SIP.Ramal"/>
+<fullyQualifiedTypeName name="SIP.SipConfiguration"/>
+<fullyQualifiedTypeName name="net.sourceforge.jtds.util.Logger"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.logging.Level"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="redes2.SIPConfiguration"/>
+<fullyQualifiedTypeName name="redes2.IAXConfiguration"/>
+<fullyQualifiedTypeName name="redes2.SIP"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="util.imp.SipImp"/>
+<fullyQualifiedTypeName name="redes2.EXTContextProcedure"/>
+<fullyQualifiedTypeName name="redes2.EXTContext"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="util.interfaces.Agents"/>
+<fullyQualifiedTypeName name="redes2.SIPRamalFacade"/>
+<fullyQualifiedTypeName name="redes2.SIPRamal"/>
+<fullyQualifiedTypeName name="redes2.IAXRamal"/>
+<fullyQualifiedTypeName name="util.imp.ExtensionsImp"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="util.interfaces.Extensions"/>
+<fullyQualifiedTypeName name="redes2.MonitorFacade"/>
+<fullyQualifiedTypeName name="util.interfaces.AsteriskMonitor"/>
+<fullyQualifiedTypeName name="util.imp.AsteriskMonitorImp"/>
+<fullyQualifiedTypeName name="redes2.Agent"/>
+<fullyQualifiedTypeName name="util.imp.AgentsImp"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

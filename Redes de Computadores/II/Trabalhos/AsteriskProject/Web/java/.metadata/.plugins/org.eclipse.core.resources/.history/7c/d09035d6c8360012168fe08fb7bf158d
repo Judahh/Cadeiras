@@ -1,0 +1,30 @@
+<%@page import="redes2.*" %>
+<%
+EXTConfiguration extConfiguration = EXTConfigurationFacade.getExtConfiguration();
+String id = extConfiguration.getId();
+String _static = extConfiguration.getStatic();
+String writeprotect = extConfiguration.getWriteprotect();
+%>
+<div id="crud" class="grid col-three-quarters mq2-col-full">
+	<h1>[<%=id%>]</h1>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id%>">
+		<ul>
+			<li>
+				<h4>id:</h4> 
+				<input type="text" name="newId" value="<%=id%>">
+			</li>
+			<li>
+				<h4>static:</h4> 
+				<input type="text" name="static" value="<%=_static%>">
+			</li>
+			<li>
+				<h4>writeprotect:</h4> 
+				<input type="text" name="writeprotect" value="<%=writeprotect%>">
+			</li>
+			<li>
+				<button type="submit" name="action" value="extConfigurationSalvar" class="button fright">Salvar</button>
+			</li>
+		</ul>
+	</form>
+</div>

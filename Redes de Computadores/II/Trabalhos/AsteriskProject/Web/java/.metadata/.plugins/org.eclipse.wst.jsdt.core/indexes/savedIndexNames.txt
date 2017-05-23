@@ -1,0 +1,16 @@
+INDEX VERSION 1.122+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+26124553.index
+207945239.index
+2349512345.index
+1492665079.index
+3890910191.index
+1488956649.index
+4250212170.index
+954467445.index
+3993676601.index
+2151345137.index
+4015464681.index
+2181632234.index
+1962622142.index
+3708224841.index
+4080937723.index

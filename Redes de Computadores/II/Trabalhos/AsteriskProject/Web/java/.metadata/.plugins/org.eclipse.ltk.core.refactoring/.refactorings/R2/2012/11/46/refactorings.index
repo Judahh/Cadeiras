@@ -1,0 +1,60 @@
+1352955259307	Delete element
+1352955368438	Rename resource 'index.html'
+1352955446539	Delete elements
+1352956614663	Delete element
+1352956949260	Move 'footer.jsp' to 'basic'
+1352956975796	Delete element
+1352960058241	Delete element
+1352960072374	Delete element
+1352965798639	Copy compilation unit
+1352966129146	Rename local variable 'ramais'
+1353010314616	Delete element
+1353014847462	Rename resource 'configure_ip.jsp'
+1353017175663	Move 1 resources to 'sip'
+1353017282029	Move 1 resources to 'sip'
+1353017291976	Move 1 resources to 'content'
+1353018703530	Rename local variable 'ramalID'
+1353018814937	Rename local variable 'ramalID'
+1353018918366	Rename field 'ramalID'
+1353018922323	Rename method 'getRamalID'
+1353018926997	Rename method 'setRamalID'
+1353019087797	Rename local variable 'ramalID'
+1353019921791	Rename field 'ramais1'
+1353021107791	Rename local variable 'ramal'
+1353021112466	Rename local variable 'ramal'
+1353021118307	Rename method 'getRamal'
+1353021124193	Rename method 'setRamal'
+1353021130285	Rename local variable 'ramal'
+1353026646000	Copy file
+1353027005669	Rename local variable 'j'
+1353028091882	Copy file
+1353028104328	Rename resource 'configure_sip.jsp'
+1353028132193	Copy file
+1353028135233	Delete element
+1353028142463	Rename resource 'crudSipConfigurationR.jsp'
+1353028737866	Rename resource 'qr_code.jsp'
+1353028763481	Rename resource 'configure_ip.jsp'
+1353028776409	Rename resource 'configure_sip.jsp'
+1353031475619	Copy file
+1353031888163	Copy file
+1353032524119	Copy compilation unit
+1353033089530	Rename resource 'sessionSip.jsp'
+1353033292787	Move 1 resources to 'iax'
+1353033444137	Rename resource 'listaSip.jsp'
+1353033462752	Rename resource 'crudSip.jsp'
+1353033493091	Rename resource 'crudSipConfiguration.jsp'
+1353033777691	Rename resource 'configureSip.jsp'
+1353033790384	Rename resource 'sipPage'
+1353033841925	Rename resource 'configureIax.jsp'
+1353033864550	Rename resource 'sipCrud.jsp'
+1353033952333	Copy file
+1353034364563	Delete element
+1353034367675	Move 1 resources to 'iax'
+1353034376166	Move 1 resources to 'sip'
+1353034386226	Move 1 resources to 'qrCode'
+1353034506724	Rename resource 'sipPage.jsp'
+1353034842433	Move 1 resources to 'content'
+1353035087676	Rename resource 'qrCode.jsp'
+1353035091859	Move 1 resources to 'content'
+1353035095885	Delete element
+1353038150616	Copy compilation unit

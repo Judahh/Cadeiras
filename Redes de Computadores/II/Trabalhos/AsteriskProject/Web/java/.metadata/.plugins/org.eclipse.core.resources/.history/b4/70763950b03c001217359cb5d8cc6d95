@@ -1,0 +1,45 @@
+<%@page import="java.util.*"%>
+<%@page import="redes2.*" %>
+<%@page import="redes2.facade.*" %>
+<%@page import="model.*" %>
+<%@page import="util.*" %>
+<%@page import="util.imp.*" %>
+<%@page import="util.interfaces.*" %>
+<%@page import="view.*" %>
+<%
+	//Params
+String requestId = request.getParameter("id");
+if(requestId == null || requestId.isEmpty()){
+	requestId = "";
+}
+
+QueueModel queue = QueueFacade.getQueue(requestId);
+
+String id = "";
+if(queue != null){
+	id = queue.getId();
+}
+%>
+<div id="crud" class="grid col-three-quarters mq2-col-full">
+	<h1>[<%=id%>]</h1>
+	<form method="post" id="sipRamal">
+		<input type="hidden" name="id" value="<%=id%>">
+		<ul>
+			<li>
+				<h4>id:</h4> 
+				<input type="text" name="newId" value="<%=id%>">
+			</li>
+			<%
+			if(queue != null){
+				ArrayList<String> members = queue.getMembers();
+			%>
+			<%
+			}
+			%>
+			<li>
+				<button type="submit" name="action" value="queueSalvar" class="button fright">Salvar</button>
+				<button type="submit" name="action" value="queueDeletar" class="button fright">Deletar</button>
+			</li>
+		</ul>
+	</form>
+</div>

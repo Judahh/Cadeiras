@@ -1,0 +1,32 @@
+<%@page import="java.util.*"%>
+<%@page import="redes2.*" %>
+<%@page import="redes2.facade.*" %>
+<%@page import="model.*" %>
+<%@page import="util.*" %>
+<%@page import="util.imp.*" %>
+<%@page import="util.interfaces.*" %>
+<%@page import="view.*" %>
+<div id="info" class="grid col-three-quarters mq2-col-full">
+
+
+// monitor.getAgents()
+<h4>Agents:</h4>
+<jsp:include page="monInfoAgents.jsp"/>
+
+// monitor.getCoreShowChannels()
+<h4>Core Show Channels:</h4>
+<jsp:include page="monInfoCore.jsp"/>
+
+// monitor.getIax()
+<h4>Iax:</h4>
+<jsp:include page="monInfoIax.jsp"/>
+
+// monitor.getQueues()
+<h4>Queues:</h4>
+<jsp:include page="monInfoQueue.jsp"/>
+
+
+// monitor.getSip()
+<h4>Sip:</h4>
+<jsp:include page="monInfoSip.jsp"/>
+</div>

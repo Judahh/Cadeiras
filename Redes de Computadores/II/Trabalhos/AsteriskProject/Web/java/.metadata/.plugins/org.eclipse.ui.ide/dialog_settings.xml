@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="212" key="DIALOG_Y_ORIGIN"/>
+		<item value="345" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="false" key="ShowDerived"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/js/jquery.validate.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/js/jquery-1.8.2.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/basic/header.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/iaxIndex.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/sip/sipManager.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/IAXRamal.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/ip/configureIp.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/js/scripts.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/extIndex.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/basic/head.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/iax/iaxManager.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/ext/extManager.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/sip/sipLista.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/sipIndex.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/iax/iaxLista.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/ext/extLista.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/ext/extContextCrud.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/sip/sipRamalCrud.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/css/style.css&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/monIndex.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/MonitorFacade.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/content/agent/agentLista.jsp&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/SIPRamalFacade.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/AP/src/util/imp/CommonImp.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/IAXRamalFacade.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/EXTContextFacade.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/R2/src/redes2/AgentFacade.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="40" key="DIALOG_Y_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="380" key="DIALOG_X_ORIGIN"/>
+			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="true" key="BUILD_NOW"/>
+		<item value="true" key="BUILD_ALL"/>
+		<item value="114" key="DIALOG_Y_ORIGIN"/>
+		<item value="423" key="DIALOG_HEIGHT"/>
+		<item value="398" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+</section>

@@ -1,0 +1,53 @@
+package redes2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IAXRamalFacade {
+	private static List<IAXRamal> ramais = new ArrayList<IAXRamal>();
+
+	public static List<IAXRamal> getIaxRamais() {
+		if (ramais.isEmpty()) {
+			for (int i = 0; i < 3; i++) {
+				ramais.add(new IAXRamal("IAX-460" + i, "Ramal <3000>", "friend",
+						"3000", "lab$3000", "LOCAL", "dynamic", "md5", "yes",
+						"no"));
+			}
+		}
+		return ramais;
+	}
+
+	public static void addIaxRamal(IAXRamal iaxRamal) {
+		getIaxRamais().add(iaxRamal);
+	}
+
+	public static void deleteIaxRamal(String iaxRamalId) {
+		IAXRamal toRemove = null;
+		for (IAXRamal iaxRamal : getIaxRamais()) {
+			if (iaxRamal.isSame(iaxRamalId)) {
+				toRemove = iaxRamal;
+			}
+		}
+		if (toRemove != null) {
+			getIaxRamais().remove(toRemove);
+		}
+	}
+
+	public static void updateIaxRamal(IAXRamal iaxRamal) {
+		updateIaxRamal(iaxRamal.getId(), iaxRamal);
+	}
+
+	public static void updateIaxRamal(String iaxRamalId, IAXRamal iaxRamal) {
+		deleteIaxRamal(iaxRamalId);
+		addIaxRamal(iaxRamal);
+	}
+
+	public static IAXRamal getIaxRamal(String iaxRamalId) {
+		for (IAXRamal iaxRamal : getIaxRamais()) {
+			if (iaxRamal.isSame(iaxRamalId)) {
+				return iaxRamal;
+			}
+		}
+		return null;
+	}
+}

@@ -1,0 +1,7 @@
+package redes2;
+
+public class Monitor extends BasicModel {
+	private String userName;
+	private String host;
+	private String status;
+}

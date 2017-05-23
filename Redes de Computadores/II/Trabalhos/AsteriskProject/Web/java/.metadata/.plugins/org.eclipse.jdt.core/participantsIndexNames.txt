@@ -1,0 +1,35 @@
+INDEX VERSION 1.126
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3993676601.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2181632234.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1329512967.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2151345137.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2849273674.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1810190417.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1962622142.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1492665079.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4250212170.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4285341878.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3890910191.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4015464681.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/954467445.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/26124553.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1093574386.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2526919278.index
+/R2/src
+/Volumes/Dump/Dropbox/Redes de Computadores/II/Trabalhos/AsteriskProject/Web/java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4267887643.index
+/R2/src

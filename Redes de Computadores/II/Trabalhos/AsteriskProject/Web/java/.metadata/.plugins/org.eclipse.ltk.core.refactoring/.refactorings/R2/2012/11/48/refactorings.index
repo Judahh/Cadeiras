@@ -1,0 +1,47 @@
+1353807006350	Copy file
+1353813708398	Copy folder
+1353813735914	Copy compilation unit
+1353813964123	Copy compilation unit
+1353814099341	Copy compilation unit
+1353815622745	Copy compilation unit
+1353816042238	Copy compilation unit
+1353819930062	Rename resource 'iaxLista.jsp'
+1353819992573	Rename method 'getExtRamais'
+1353821117137	Rename resource 'iaxConfigurationCrud.jsp'
+1353825114351	Rename resource 'iaxManager.jsp'
+1353828069001	Rename resource 'iaxRamalCrud.jsp'
+1353873288672	Rename type 'EXTContextProcedure'
+1353963465687	Extract local variable 'id'
+1353966837858	Rename field 'procedures'
+1353966845859	Rename method 'getProcedures'
+1354138966160	Delete element
+1354147692356	Delete element
+1354147926077	Delete elements
+1354147931885	Delete element
+1354147936579	Delete element
+1354147940684	Delete element
+1354147963100	Delete element
+1354147972586	Delete element
+1354161640193	Copy compilation unit
+1354161653698	Copy file
+1354161700019	Copy file
+1354161713752	Rename resource 'monIndex.jsp'
+1354161762608	Delete element
+1354162068308	Delete element
+1354162118535	Delete element
+1354163742969	Rename local variable 'teste'
+1354165829786	Copy compilation unit
+1354166811939	Rename method 'teste'
+1354166936872	Copy compilation unit
+1354167002654	Rename field 'userName'
+1354167009303	Rename method 'getUserName'
+1354167014128	Rename local variable 'userName'
+1354167099451	Copy compilation unit
+1354168643922	Copy compilation unit
+1354169187337	Copy folder
+1354169193725	Delete element
+1354169198961	Copy folder
+1354169208929	Rename resource 'sipLista.jsp'
+1354169215293	Rename resource 'sipManager.jsp'
+1354169221174	Rename resource 'sipRamalCrud.jsp'
+1354169235733	Copy file

@@ -1,0 +1,52 @@
+package redes2.facade;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import util.imp.AsteriskMonitorImp;
+import util.interfaces.AsteriskMonitor;
+
+public class MonitorFacade {
+	private static AsteriskMonitor monitor = new AsteriskMonitorImp();
+	private static boolean fake = false;
+
+	public static List<List<String>> getSip() {
+		List<List<String>> toReturn = new ArrayList<List<List<String>>>();
+		if (fake) {
+			List<String> local;
+			
+			local = new ArrayList<String>();
+			local.add("4001");
+			local.add("192.168.1.100");
+			local.add("On");
+			toReturn.add(local);
+			
+			local = new ArrayList<String>();
+			local.add("4002");
+			local.add("192.168.1.100");
+			local.add("Unmonitored");
+			toReturn.add(local);
+			
+			local = new ArrayList<String>();
+			local.add("4003");
+			local.add("192.168.1.100");
+			local.add("Off");
+			
+			toReturn.add(local);
+			return toReturn;
+		} else {
+			List<String>[] listaSip = monitor.getSip();
+			for (String str : listaSip[0]) {
+				toReturn.add(str);
+			}
+		}
+		return toReturn;
+	}
+
+	public static String getASD() {
+		String toReturn = "";
+		// monitor.getQueues()
+
+		return toReturn;
+	}
+}

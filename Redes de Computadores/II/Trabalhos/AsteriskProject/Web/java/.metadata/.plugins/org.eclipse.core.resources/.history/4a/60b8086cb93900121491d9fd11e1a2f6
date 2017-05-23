@@ -1,0 +1,20 @@
+package redes2;
+
+public class EXTConfiguration extends BasicModel {
+	private String _static;
+	private String writeprotect;
+
+	public EXTConfiguration(String id, String _static, String writeprotect) {
+		this.id = id;
+		this._static = _static;
+		this.writeprotect = writeprotect;
+	}
+
+	public String getStatic() {
+		return get(_static);
+	}
+	
+	public String getWriteprotect() {
+		return get(writeprotect);
+	}
+}

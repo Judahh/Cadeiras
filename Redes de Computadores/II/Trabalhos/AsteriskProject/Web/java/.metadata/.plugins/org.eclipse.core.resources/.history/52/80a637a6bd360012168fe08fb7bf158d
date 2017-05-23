@@ -1,0 +1,29 @@
+<%@page import="redes2.*" %>
+<aside class="grid col-one-quarter mq2-col-full">
+	<form method="post">
+		<input type="hidden" name="action" value="configurationCrud">
+		<menu>
+			<li>
+				<button type="submit" name="general" class="button">Configuração</button>
+			</li>
+		</menu>
+	</form>
+	<p>Ramais:</p>
+	<form method="post">
+		<input type="hidden" name="action" value="ramalCrud">
+		<menu>
+			<%
+				for(IAXRamal ramal : IAXRamalFacade.getIaxRamais()){
+			%>
+			<li>
+				<button type="submit" name="id" class="button" value="<%=ramal.getId()%>"><%=ramal.getId()%></button>
+			</li>
+			<%
+			}
+			%>
+			<li>
+				<button type="submit" name="id" class="button">+</button>
+			</li>
+		</menu>
+	</form>
+</aside>

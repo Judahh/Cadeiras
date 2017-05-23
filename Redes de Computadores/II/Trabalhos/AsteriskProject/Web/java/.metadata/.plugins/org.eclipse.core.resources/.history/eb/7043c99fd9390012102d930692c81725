@@ -1,0 +1,45 @@
+<%@page import="redes2.*" %>
+<%
+String id = iaxConfiguration.getId();
+String port = iaxConfiguration.getPort();
+String bindaddr = iaxConfiguration.getBindaddr();
+String context = iaxConfiguration.getContext();
+String bandwidth = iaxConfiguration.getBandwidth();
+String allow = iaxConfiguration.getAllow();
+String tos = iaxConfiguration.getTos();
+%>
+<div id="crud" class="grid col-three-quarters mq2-col-full">
+	<h1>[<%=id%>]</h1>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id%>">
+		<ul>
+			<li>
+				<h4>id:</h4> 
+				<input type="text" name="newId" value="<%=id%>">
+			</li>
+			<li>
+				<h4>port:</h4> 
+				<input type="text" name="port" value="<%=port%>">
+			</li>
+			<li>
+				<h4>bindaddr:</h4> 
+				<input type="text" name="bindaddr" value="<%=bindaddr%>">
+			</li>
+			<li>
+				<h4>context:</h4> 
+				<input type="text" name="context" value="<%=context%>">
+			</li>
+			<li>
+				<h4>allow:</h4> 
+				<input type="text" name="allow" value="<%=allow%>">
+			</li>
+			<li>
+				<h4>tos:</h4> 
+				<input type="text" name="tos" value="<%=tos%>">
+			</li>
+			<li>
+				<button type="submit" name="action" value="iaxConfigurationSalvar" class="button fright">Salvar</button>
+			</li>
+		</ul>
+	</form>
+</div>
