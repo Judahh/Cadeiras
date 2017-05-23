@@ -1,0 +1,1375 @@
+--------------------------------------------------------------------------------
+SOBRE O SISTEMA ESPECIALISTA
+  -- Nome:    Super Heroi
+  -- Autores: Judah
+  -- Resumo:
+     Bem Vindo!
+
+Operador de maior precedência: conjunção
+Fator de confiança mínimo para aceitação de regra: 50
+
+SOBRE OS ARQUIVOS
+  Arquivo original: C:\Users\JH\Dropbox\Inteligencia Artificial\Trabalhos\SINTA\SuperHeroi.bcm
+  O sistema não possui recursos de ajuda.
+--------------------------------------------------------------------------------
+
+VARIÁVEIS
+
+  Absorção de Energia
+    Tipo:
+      univalorada
+  Absorção de Radiação
+    Tipo:
+      univalorada
+  Agilidade
+    Tipo:
+      univalorada
+  Anel
+    Tipo:
+      univalorada
+  Armadura
+    Tipo:
+      univalorada
+  Armadura Iron Man
+    Tipo:
+      univalorada
+  Armas Naturais
+    Tipo:
+      univalorada
+  Artes Marciais
+    Tipo:
+      univalorada
+  Atmokinesis
+    Tipo:
+      univalorada
+  Atributos de Animais
+    Tipo:
+      univalorada
+  Audição Aprimorada
+    Tipo:
+      univalorada
+  Auto-Subsistência
+    Tipo:
+      univalorada
+  Campo de Força
+    Tipo:
+      univalorada
+  Camuflagem
+    Tipo:
+      univalorada
+  Capa
+    Tipo:
+      univalorada
+  Chronokinesis
+    Tipo:
+      univalorada
+  Cinto com Asas
+    Tipo:
+      univalorada
+  Cinto de Utilidades
+    Tipo:
+      univalorada
+  Clarevidencia
+    Tipo:
+      univalorada
+  Controle da Mente
+    Tipo:
+      univalorada
+  Controle de Densidade
+    Tipo:
+      univalorada
+  Copia as Abilidades dos Animais Próximos
+    Tipo:
+      univalorada
+  Cryokinesis
+    Tipo:
+      univalorada
+  Durabilidade
+    Tipo:
+      univalorada
+  Elasticidade
+    Tipo:
+      univalorada
+  Empatia
+    Tipo:
+      univalorada
+  Escudo
+    Tipo:
+      univalorada
+  Explosões de Energia
+    Tipo:
+      univalorada
+  Fator de Cura
+    Tipo:
+      univalorada
+  Força
+    Tipo:
+      univalorada
+  Furtividade
+    Tipo:
+      univalorada
+  Físico Humano Perfeito
+    Tipo:
+      univalorada
+  Heroi
+    Valores:
+      Green Lantern
+      Mantis Marvel
+      Iron Fist
+      Marvel Girl
+      Huntress
+      Mister Fantastic
+      Hulk
+      Moondragon
+      Hellcat
+      Nightcrawler
+      Hawkeye
+      Quicksilver
+      Green Arrow
+      Scarlet Witch
+      Flash
+      She-Hulk
+      Doctor Strange
+      Storm
+      Cyclops
+      Swordsman
+      Captain Marvel
+      Green Hornet
+      Blue Beetle
+      Falcon
+      Ghost Rider
+      Thing
+      Black Canary
+      Vision
+      Ant Man
+      Wildcat
+      Animal Man
+      Wonder Man
+      Zatanna
+      Iron Man
+      Mantis DC
+      Invisible Girl
+      Martian Manhunter
+      Human Torch
+      Miss Marvel
+      Hercules
+      Moon Knight
+      Hawk Girl
+      Nick Fury
+      Hawk Man
+      Professor X
+      Gambit
+      Robin
+      Elektra
+      Shazam
+      Daredevil
+      Spider Man
+      Cat Woman
+      Super Girl
+      Captain America
+      Atom
+      Black Widow
+      Beast
+      Black Panther
+      Punisher
+      Batman
+      Two-Gun Kid
+      Aquaman
+      Wasp
+      Super Man
+      Wolverine
+      Wonder Woman
+      Spawn
+    Tipo:
+      multivalorada
+  Hydrokinesis
+    Tipo:
+      multivalorada
+  Hypnokinesis
+    Tipo:
+      univalorada
+  Ilusões
+    Tipo:
+      univalorada
+  Imortalidade
+    Tipo:
+      univalorada
+  Indestrutivel
+    Tipo:
+      univalorada
+  Intangibilidade
+    Tipo:
+      multivalorada
+  Inteligencia
+    Tipo:
+      univalorada
+  Invisibilidade
+    Tipo:
+      univalorada
+  Invulnerabilidade
+    Tipo:
+      univalorada
+  Levitação
+    Tipo:
+      univalorada
+  Longevidade
+    Tipo:
+      univalorada
+  Magia
+    Tipo:
+      univalorada
+  Magnetokinesis
+    Tipo:
+      univalorada
+  Manipulação de energia
+    Tipo:
+      univalorada
+  Manipulação Molecular
+    Tipo:
+      univalorada
+  Martelo
+    Tipo:
+      univalorada
+  Mestre em Armas
+    Tipo:
+      univalorada
+  Mudança de Forma
+    Tipo:
+      multivalorada
+  Mudança de Tamanho
+    Tipo:
+      multivalorada
+  Omnilingualism
+    Tipo:
+      univalorada
+  Phasing
+    Tipo:
+      multivalorada
+  Poder da Vontade/Desejo
+    Tipo:
+      univalorada
+  Poderes Baseados em Armas
+    Tipo:
+      univalorada
+  Poderes Orientados a Animais
+    Tipo:
+      univalorada
+  Poderes Psiônicos
+    Tipo:
+      univalorada
+  Ponto fraco
+    Valores:
+      Cor Amarela
+      Criptonita
+    Tipo:
+      multivalorada
+  Precisão
+    Tipo:
+      univalorada
+  Projeção Astral
+    Tipo:
+      univalorada
+  Pyrokinesis
+    Tipo:
+      univalorada
+  Raios de Energia
+    Tipo:
+      univalorada
+  Rajada Mental
+    Tipo:
+      univalorada
+  Raça
+    Valores:
+      Maquina
+      Alienígena
+      Humana
+    Tipo:
+      multivalorada
+  Reflexos
+    Tipo:
+      univalorada
+  Resistência a Controle da Mente
+    Tipo:
+      univalorada
+  Resistência a Doenças
+    Tipo:
+      univalorada
+  Resistência Física
+    Tipo:
+      univalorada
+  Respiração Subaquática
+    Tipo:
+      univalorada
+  Ressurreição
+    Tipo:
+      univalorada
+  Rico
+    Tipo:
+      univalorada
+  Saltar
+    Tipo:
+      univalorada
+  Secreção de Substâncias
+    Tipo:
+      univalorada
+  Sensor de Perigo
+    Tipo:
+      univalorada
+  Sensor de Poderes
+    Tipo:
+      univalorada
+  Sentidos Reforçados
+    Tipo:
+      univalorada
+  Sexo
+    Valores:
+      Feminino
+      Masculino
+    Tipo:
+      multivalorada
+  Sonar
+    Tipo:
+      multivalorada
+  Sopro
+    Tipo:
+      univalorada
+  Superpoder
+    Tipo:
+      univalorada
+  Technopath/Cyberpath
+    Tipo:
+      univalorada
+  Telekinesis
+    Tipo:
+      univalorada
+  Telepatia
+    Tipo:
+      univalorada
+  Teletransporte
+    Tipo:
+      univalorada
+  Terrakinesis
+    Tipo:
+      univalorada
+  Thermokinesis
+    Tipo:
+      univalorada
+  Velocidade
+    Tipo:
+      univalorada
+  Resistência a Magia
+    Tipo:
+      univalorada
+  Resistência a Radiação
+    Tipo:
+      univalorada
+  Resistência a Telepatia
+    Tipo:
+      univalorada
+  Resistência a Toxinas
+    Tipo:
+      univalorada
+  Resistência ao Calor
+    Tipo:
+      univalorada
+  Resistência ao Fogo
+    Tipo:
+      univalorada
+  Resistência ao Frio
+    Tipo:
+      multivalorada
+  Viagem no Tempo
+    Tipo:
+      univalorada
+  Vigor
+    Tipo:
+      univalorada
+  Visão - Aquecimento
+    Tipo:
+      univalorada
+  Visão - Calor
+    Tipo:
+      univalorada
+  Visão - Microscópica
+    Tipo:
+      univalorada
+  Visão - Noite
+    Tipo:
+      univalorada
+  Visão - Raio X
+    Tipo:
+      univalorada
+  Visão - Telescópica
+    Tipo:
+      univalorada
+  Voar
+    Tipo:
+      univalorada
+  Wallcrawling
+    Tipo:
+      univalorada
+
+OBJETIVOS
+
+  Heroi
+
+REGRAS
+
+  Regra 1
+    SE Armadura = Sim
+    E  Capa = Não
+    E  Força = Sim
+    E  Durabilidade = Sim
+    E  Velocidade = Sim
+    E  Voar = Sim
+    E  Absorção de Energia = Sim
+    E  Precisão = Sim
+    E  Raios de Energia = Sim
+    E  Explosões de Energia = Sim
+    E  Resistência a Radiação = Sim
+    E  Reflexos = Sim
+    E  Respiração Subaquática = Sim
+    E  Visão - Noite = Sim
+    E  Visão - Calor = Sim
+    E  Visão - Telescópica = Sim
+    E  Poderes Baseados em Armas = Sim
+    ENTÃO Armadura Iron Man = Sim CNF 100%
+
+  Regra 2
+    SE Anel = Sim
+    ENTÃO Poder da Vontade/Desejo = Sim CNF 100%
+
+  Regra 3
+    SE Cinto com Asas = Sim
+    ENTÃO Voar = Sim CNF 100%
+
+  Regra 4
+    SE Raça = Humana
+    E  Copia as Abilidades dos Animais Próximos = Sim
+    E  Superpoder = Sim
+    E  Sexo = Masculino
+    ENTÃO Heroi = Animal Man CNF 100%
+
+  Regra 5
+    SE Raça = Humana
+    E  Inteligencia = Sim
+    E  Mudança de Tamanho = Sim
+    E  Superpoder = Sim
+    E  Sexo = Masculino
+    ENTÃO Heroi = Ant Man CNF 100%
+
+  Regra 6
+    SE Telepatia = Sim
+    E  Respiração Subaquática = Sim
+    E  Artes Marciais = Sim
+    E  Superpoder = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    ENTÃO Heroi = Aquaman CNF 100%
+
+  Regra 7
+    SE Mudança de Tamanho = Sim
+    E  Controle de Densidade = Sim
+    E  Superpoder = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    ENTÃO Heroi = Atom CNF 100%
+
+  Regra 8
+    SE Artes Marciais = Sim
+    E  Inteligencia = Sim
+    E  Rico = Sim
+    E  Capa = Sim
+    E  Superpoder = Não
+    E  Sexo = Masculino
+    E  Físico Humano Perfeito = Sim
+    E  Cinto de Utilidades = Sim
+    E  Furtividade = Sim
+    E  Mestre em Armas = Sim
+    E  Raça = Humana
+    ENTÃO Heroi = Batman CNF 100%
+
+  Regra 9
+    SE Agilidade = Sim
+    E  Força = Sim
+    E  Saltar = Sim
+    E  Inteligencia = Sim
+    E  Sentidos Reforçados = Sim
+    E  Superpoder = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    ENTÃO Heroi = Beast CNF 100%
+
+  Regra 10
+    SE Cinto com Asas = Sim
+    E  Superpoder = Não
+    E  Sexo = Feminino
+    E  Artes Marciais = Sim
+    E  Físico Humano Perfeito = Sim
+    E  Raça = Humana
+    ENTÃO Heroi = Black Canary CNF 100%
+
+  Regra 11
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Artes Marciais = Sim
+    E  Físico Humano Perfeito = Sim
+    ENTÃO Heroi = Black Panther CNF 100%
+
+  Regra 12
+    SE Superpoder = Não
+    E  Sexo = Feminino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    ENTÃO Heroi = Black Widow CNF 100%
+
+  Regra 13
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Inteligencia = Sim
+    ENTÃO Heroi = Blue Beetle CNF 100%
+
+  Regra 14
+    SE Superpoder = Sim
+    E  Força = Sim
+    E  Agilidade = Sim
+    E  Reflexos = Sim
+    E  Durabilidade = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Escudo = Sim
+    ENTÃO Heroi = Captain America CNF 100%
+
+  Regra 15
+    SE Superpoder = Sim
+    E  Força = Sim
+    E  Agilidade = Sim
+    E  Durabilidade = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Clarevidencia = Sim
+    E  Explosões de Energia = Sim
+    E  Inteligencia = Sim
+    E  Voar = Sim
+    E  Fator de Cura = Sim
+    E  Hypnokinesis = Sim
+    E  Invulnerabilidade = Sim
+    E  Magia = Sim
+    E  Resistência a Magia = Sim
+    E  Omnilingualism = Sim
+    E  Reflexos = Sim
+    E  Auto-Subsistência = Sim
+    E  Vigor = Sim
+    E  Artes Marciais = Sim
+    E  Velocidade = Sim
+    E  Teletransporte = Sim
+    ENTÃO Heroi = Captain Marvel CNF 100%
+
+  Regra 16
+    SE Furtividade = Sim
+    E  Superpoder = Sim
+    E  Sexo = Feminino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Agilidade = Sim
+    E  Precisão = Sim
+    ENTÃO Heroi = Cat Woman CNF 100%
+
+  Regra 17
+    SE Superpoder = Sim
+    E  Agilidade = Sim
+    E  Artes Marciais = Sim
+    E  Raios de Energia = Sim
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Inteligencia = Sim
+    ENTÃO Heroi = Cyclops CNF 100%
+
+  Regra 18
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Sentidos Reforçados = Sim
+    E  Inteligencia = Sim
+    E  Precisão = Sim
+    E  Agilidade = Sim
+    E  Superpoder = Sim
+    E  Audição Aprimorada = Sim
+    E  Reflexos = Sim
+    E  Resistência Física = Sim
+    E  Físico Humano Perfeito = Sim
+    ENTÃO Heroi = Daredevil CNF 100%
+
+  Regra 19
+    SE Sexo = Masculino
+    E  Raça = Humana
+    E  Projeção Astral = Sim
+    E  Superpoder = Sim
+    E  Voar = Sim
+    E  Teletransporte = Sim
+    E  Velocidade = Sim
+    E  Campo de Força = Sim
+    E  Hypnokinesis = Sim
+    E  Ilusões = Sim
+    E  Invisibilidade = Sim
+    E  Longevidade = Sim
+    E  Magia = Sim
+    E  Telekinesis = Sim
+    E  Telepatia = Sim
+    ENTÃO Heroi = Doctor Strange CNF 100%
+
+  Regra 20
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Físico Humano Perfeito = Sim
+    E  Agilidade = Sim
+    E  Precisão = Sim
+    E  Superpoder = Não
+    E  Furtividade = Sim
+    E  Mestre em Armas = Sim
+    ENTÃO Heroi = Elektra CNF 100%
+
+  Regra 21
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Voar = Sim
+    E  Telepatia = Sim
+    E  Superpoder = Não
+    ENTÃO Heroi = Falcon CNF 100%
+
+  Regra 22
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Velocidade = Sim
+    E  Viagem no Tempo = Sim
+    E  Superpoder = Sim
+    ENTÃO Heroi = Flash CNF 100%
+
+  Regra 23
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Superpoder = Sim
+    E  Agilidade = Sim
+    E  Manipulação de energia = Sim
+    E  Poderes Psiônicos = Sim
+    E  Telekinesis = Sim
+    E  Resistência a Telepatia = Sim
+    ENTÃO Heroi = Gambit CNF 100%
+
+  Regra 24
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Superpoder = Sim
+    E  Durabilidade = Sim
+    E  Resistência ao Fogo = Sim
+    E  Resistência ao Calor = Sim
+    E  Fator de Cura = Sim
+    E  Resistência a Magia = Sim
+    E  Poderes Psiônicos = Sim
+    E  Pyrokinesis = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    E  Poderes Baseados em Armas = Sim
+    ENTÃO Heroi = Ghost Rider CNF 100%
+
+  Regra 25
+    SE Rico = Sim
+    E  Raça = Humana
+    E  Sexo = Masculino
+    E  Superpoder = Não
+    E  Físico Humano Perfeito = Sim
+    E  Resistência Física = Sim
+    E  Vigor = Sim
+    E  Furtividade = Sim
+    E  Precisão = Sim
+    E  Mestre em Armas = Sim
+    ENTÃO Heroi = Green Arrow CNF 100%
+
+  Regra 26
+    SE Superpoder = Não
+    E  Rico = Sim
+    E  Raça = Humana
+    E  Sexo = Masculino
+    ENTÃO Heroi = Green Hornet CNF 100%
+
+  Regra 27
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Ponto fraco = Cor Amarela
+    E  Anel = Sim
+    ENTÃO Heroi = Green Lantern CNF 100%
+
+  Regra 28
+    SE Sexo = Feminino
+    E  Raça = Humana
+    E  Artes Marciais = Sim
+    E  Superpoder = Não
+    E  Cinto com Asas = Sim
+    ENTÃO Heroi = Hawk Girl CNF 100%
+
+  Regra 29
+    SE Sexo = Masculino
+    E  Raça = Humana
+    E  Artes Marciais = Sim
+    E  Superpoder = Não
+    E  Cinto com Asas = Sim
+    ENTÃO Heroi = Hawk Man CNF 100%
+
+  Regra 30
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Mestre em Armas = Sim
+    ENTÃO Heroi = Hawkeye CNF 100%
+
+  Regra 31
+    SE Resistência a Magia = Sim
+    E  Telekinesis = Sim
+    E  Superpoder = Sim
+    E  Sexo = Feminino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    ENTÃO Heroi = Hellcat CNF 100%
+
+  Regra 32
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Força = Sim
+    E  Superpoder = Sim
+    E  Artes Marciais = Sim
+    E  Durabilidade = Sim
+    E  Fator de Cura = Sim
+    E  Imortalidade = Sim
+    E  Invulnerabilidade = Sim
+    E  Longevidade = Sim
+    E  Vigor = Sim
+    E  Velocidade = Sim
+    ENTÃO Heroi = Hercules CNF 100%
+
+  Regra 33
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Durabilidade = Sim
+    E  Saltar = Sim
+    E  Fator de Cura = Sim
+    E  Longevidade = Sim
+    E  Resistência a Controle da Mente = Sim
+    E  Absorção de Radiação = Sim
+    E  Auto-Subsistência = Sim
+    E  Vigor = Sim
+    E  Velocidade = Sim
+    E  Força = Sim
+    E  Resistência a Doenças = Sim
+    E  Resistência a Toxinas = Sim
+    ENTÃO Heroi = Hulk CNF 100%
+
+  Regra 34
+    SE Resistência ao Calor = Sim
+    E  Resistência ao Fogo = Sim
+    E  Pyrokinesis = Sim
+    E  Thermokinesis = Sim
+    E  Voar = Sim
+    E  Velocidade = Sim
+    E  Raça = Humana
+    E  Sexo = Masculino
+    ENTÃO Heroi = Human Torch CNF 100%
+
+  Regra 35
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Precisão = Sim
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    ENTÃO Heroi = Huntress CNF 100%
+
+  Regra 36
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Campo de Força = Sim
+    E  Invisibilidade = Sim
+    E  Levitação = Sim
+    E  Poderes Psiônicos = Sim
+    ENTÃO Heroi = Invisible Girl CNF 100%
+
+  Regra 37
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Artes Marciais = Sim
+    E  Absorção de Energia = Sim
+    E  Sentidos Reforçados = Sim
+    E  Fator de Cura = Sim
+    E  Físico Humano Perfeito = Sim
+    E  Reflexos = Sim
+    ENTÃO Heroi = Iron Fist CNF 100%
+
+  Regra 38
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Inteligencia = Sim
+    E  Rico = Sim
+    E  Armadura Iron Man = Sim
+    ENTÃO Heroi = Iron Man CNF 100%
+
+  Regra 39
+    SE Raça = Alienígena
+    E  Sexo = Masculino
+    E  Resistência Física = Sim
+    E  Sentidos Reforçados = Sim
+    E  Resistência ao Fogo = Sim
+    E  Voar = Sim
+    E  Ilusões = Sim
+    E  Invisibilidade = Sim
+    E  Invulnerabilidade = Sim
+    E  Auto-Subsistência = Sim
+    E  Intangibilidade = Sim
+    E  Phasing = Sim
+    E  Mudança de Forma = Sim
+    E  Mudança de Tamanho = Sim
+    E  Velocidade = Sim
+    E  Força = Sim
+    E  Telepatia = Sim
+    E  Visão - Aquecimento = Sim
+    E  Visão - Microscópica = Sim
+    E  Visão - Telescópica = Sim
+    E  Visão - Calor = Sim
+    E  Visão - Raio X = Sim
+    ENTÃO Heroi = Martian Manhunter CNF 100%
+
+  Regra 40
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Inteligencia = Sim
+    E  Projeção Astral = Sim
+    E  Absorção de Energia = Sim
+    E  Manipulação de energia = Sim
+    E  Campo de Força = Sim
+    E  Ilusões = Sim
+    E  Imortalidade = Sim
+    E  Levitação = Sim
+    E  Controle da Mente = Sim
+    E  Manipulação Molecular = Sim
+    E  Poderes Psiônicos = Sim
+    E  Pyrokinesis = Sim
+    E  Ressurreição = Sim
+    E  Telekinesis = Sim
+    E  Telepatia = Sim
+    E  Resistência a Telepatia = Sim
+    ENTÃO Heroi = Marvel Girl CNF 100%
+
+  Regra 41
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Agilidade = Sim
+    E  Durabilidade = Sim
+    E  Absorção de Energia = Sim
+    E  Explosões de Energia = Sim
+    E  Reflexos = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    ENTÃO Heroi = Miss Marvel CNF 100%
+
+  Regra 42
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Inteligencia = Sim
+    E  Elasticidade = Sim
+    E  Mudança de Forma = Sim
+    E  Mudança de Tamanho = Sim
+    ENTÃO Heroi = Mister Fantastic CNF 100%
+
+  Regra 43
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Precisão = Sim
+    E  Resistência Física = Sim
+    E  Reflexos = Sim
+    E  Força = Sim
+    E  Resistência a Telepatia = Sim
+    E  Mestre em Armas = Sim
+    E  Artes Marciais = Sim
+    ENTÃO Heroi = Moon Knight CNF 100%
+
+  Regra 44
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Mestre em Armas = Sim
+    E  Longevidade = Sim
+    ENTÃO Heroi = Nick Fury CNF 100%
+
+  Regra 45
+    SE Teletransporte = Sim
+    E  Agilidade = Sim
+    E  Visão - Noite = Sim
+    E  Reflexos = Sim
+    E  Wallcrawling = Sim
+    E  Raça = Humana
+    E  Sexo = Masculino
+    ENTÃO Heroi = Nightcrawler CNF 100%
+
+  Regra 46
+    SE Sexo = Masculino
+    E  Raça = Humana
+    E  Inteligencia = Sim
+    E  Projeção Astral = Sim
+    E  Ilusões = Sim
+    E  Controle da Mente = Sim
+    E  Sensor de Poderes = Sim
+    E  Poderes Psiônicos = Sim
+    E  Telepatia = Sim
+    ENTÃO Heroi = Professor X CNF 100%
+
+  Regra 47
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Mestre em Armas = Sim
+    ENTÃO Heroi = Punisher CNF 100%
+
+  Regra 48
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Velocidade = Sim
+    E  Viagem no Tempo = Sim
+    E  Artes Marciais = Sim
+    E  Manipulação Molecular = Sim
+    E  Força = Sim
+    E  Durabilidade = Sim
+    E  Superpoder = Sim
+    E  Chronokinesis = Sim
+    ENTÃO Heroi = Quicksilver CNF 100%
+
+  Regra 49
+    SE Superpoder = Não
+    E  Sexo = Masculino
+    E  Raça = Humana
+    E  Físico Humano Perfeito = Sim
+    E  Artes Marciais = Sim
+    E  Mestre em Armas = Sim
+    E  Furtividade = Sim
+    ENTÃO Heroi = Robin CNF 100%
+
+  Regra 50
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Superpoder = Sim
+    E  Magia = Sim
+    ENTÃO Heroi = Scarlet Witch CNF 100%
+
+  Regra 51
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Durabilidade = Sim
+    E  Fator de Cura = Sim
+    E  Saltar = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    ENTÃO Heroi = She-Hulk CNF 100%
+
+  Regra 52
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Agilidade = Sim
+    E  Atributos de Animais = Sim
+    E  Poderes Orientados a Animais = Sim
+    E  Sensor de Perigo = Sim
+    E  Durabilidade = Sim
+    E  Sentidos Reforçados = Sim
+    E  Fator de Cura = Sim
+    E  Saltar = Sim
+    E  Armas Naturais = Sim
+    E  Reflexos = Sim
+    E  Vigor = Sim
+    E  Secreção de Substâncias = Sim
+    E  Força = Sim
+    E  Visão - Noite = Sim
+    E  Wallcrawling = Sim
+    ENTÃO Heroi = Spider Man CNF 100%
+
+  Regra 53
+    SE Durabilidade = Sim
+    E  Raça = Humana
+    E  Sexo = Masculino
+    E  Empatia = Sim
+    E  Resistência Física = Sim
+    E  Voar = Sim
+    E  Imortalidade = Sim
+    E  Magia = Sim
+    E  Ressurreição = Sim
+    E  Mudança de Forma = Sim
+    E  Velocidade = Sim
+    E  Força = Sim
+    E  Teletransporte = Sim
+    ENTÃO Heroi = Spawn CNF 100%
+
+  Regra 54
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Atmokinesis = Sim
+    E  Voar = Sim
+    E  Resistência a Telepatia = Sim
+    ENTÃO Heroi = Storm CNF 100%
+
+  Regra 55
+    SE Saltar = Sim
+    E  Reflexos = Sim
+    E  Ponto fraco = Criptonita
+    E  Capa = Sim
+    E  Raça = Alienígena
+    E  Força = Sim
+    E  Durabilidade = Sim
+    E  Sexo = Masculino
+    E  Velocidade = Sim
+    E  Voar = Sim
+    E  Superpoder = Sim
+    ENTÃO Heroi = Super Girl CNF 100%
+
+  Regra 56
+    SE Saltar = Sim
+    E  Reflexos = Sim
+    E  Ponto fraco = Criptonita
+    E  Capa = Sim
+    E  Raça = Alienígena
+    E  Força = Sim
+    E  Durabilidade = Sim
+    E  Sexo = Masculino
+    E  Velocidade = Sim
+    E  Voar = Sim
+    E  Superpoder = Sim
+    ENTÃO Heroi = Super Man CNF 100%
+
+  Regra 57
+    SE Resistência ao Fogo = Sim
+    E  Resistência ao Frio = Sim
+    E  Resistência ao Calor = Sim
+    E  Durabilidade = Sim
+    E  Resistência Física = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    E  Saltar = Sim
+    ENTÃO Heroi = Thing CNF 100%
+
+  Regra 58
+    SE Raça = Maquina
+    E  Sexo = Masculino
+    E  Inteligencia = Sim
+    E  Controle de Densidade = Sim
+    E  Durabilidade = Sim
+    E  Absorção de Energia = Sim
+    E  Raios de Energia = Sim
+    E  Explosões de Energia = Sim
+    E  Audição Aprimorada = Sim
+    E  Voar = Sim
+    E  Intangibilidade = Sim
+    E  Resistência Física = Sim
+    E  Phasing = Sim
+    E  Reflexos = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    E  Technopath/Cyberpath = Sim
+    ENTÃO Heroi = Vision CNF 100%
+
+  Regra 59
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Poderes Orientados a Animais = Sim
+    E  Voar = Sim
+    E  Mudança de Tamanho = Sim
+    E  Poderes Baseados em Armas = Sim
+    ENTÃO Heroi = Wasp CNF 100%
+
+  Regra 60
+    SE Raça = Humana
+    E  Sexo = Masculino
+    E  Agilidade = Sim
+    E  Poderes Orientados a Animais = Sim
+    E  Durabilidade = Sim
+    E  Resistência Física = Sim
+    E  Sentidos Reforçados = Sim
+    E  Fator de Cura = Sim
+    E  Longevidade = Sim
+    E  Imortalidade = Sim
+    E  Armas Naturais = Sim
+    E  Reflexos = Sim
+    E  Vigor = Sim
+    E  Força = Sim
+    E  Resistência a Doenças = Sim
+    E  Resistência a Toxinas = Sim
+    E  Artes Marciais = Sim
+    ENTÃO Heroi = Wolverine CNF 100%
+
+  Regra 61
+    SE Sexo = Masculino
+    E  Raça = Humana
+    E  Longevidade = Sim
+    E  Durabilidade = Sim
+    E  Explosões de Energia = Sim
+    E  Voar = Sim
+    E  Invulnerabilidade = Sim
+    E  Reflexos = Sim
+    E  Auto-Subsistência = Sim
+    E  Mudança de Tamanho = Sim
+    E  Vigor = Sim
+    E  Velocidade = Sim
+    E  Força = Sim
+    ENTÃO Heroi = Wonder Man CNF 100%
+
+  Regra 62
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Poderes Orientados a Animais = Sim
+    E  Durabilidade = Sim
+    E  Audição Aprimorada = Sim
+    E  Sentidos Reforçados = Sim
+    E  Resistência ao Fogo = Sim
+    E  Resistência ao Calor = Sim
+    E  Voar = Sim
+    E  Fator de Cura = Sim
+    E  Resistência a Magia = Sim
+    E  Vigor = Sim
+    E  Velocidade = Sim
+    E  Força = Sim
+    E  Poderes Baseados em Armas = Sim
+    ENTÃO Heroi = Wonder Woman CNF 100%
+
+  Regra 63
+    SE Raça = Humana
+    E  Sexo = Feminino
+    E  Superpoder = Sim
+    E  Atmokinesis = Sim
+    E  Cryokinesis = Sim
+    E  Hydrokinesis = Sim
+    E  Magia = Sim
+    E  Pyrokinesis = Sim
+    E  Telepatia = Sim
+    E  Terrakinesis = Sim
+    ENTÃO Heroi = Zatanna CNF 100%
+
+PERGUNTAS
+
+  Variável:Absorção de Energia
+     Pergunta:"Possui Absorção de Energia?"
+  Variável:Absorção de Radiação
+     Pergunta:"Possui Absorção de Radiação?"
+  Variável:Agilidade
+     Pergunta:"Possui Agilidade?"
+  Variável:Anel
+     Pergunta:"Possui Anel Lanterna Verde?"
+  Variável:Armadura
+     Pergunta:"Possui Armadura?"
+  Variável:Armadura Iron Man
+     Pergunta:"Possui Armadura Iron Man?"
+  Variável:Armas Naturais
+     Pergunta:"Possui Armas Naturais?"
+  Variável:Artes Marciais
+     Pergunta:"Possui conhecimento em Artes Marciais?"
+  Variável:Atmokinesis
+     Pergunta:"Pode Controlar o tempo com a Mente?"
+  Variável:Atributos de Animais
+     Pergunta:"Possui Atributos de Animais?"
+  Variável:Audição Aprimorada
+     Pergunta:"Possui Audição Aprimorada?"
+  Variável:Auto-Subsistência
+     Pergunta:"É Auto-subsistente?"
+  Variável:Campo de Força
+     Pergunta:"Possui Campo de Força?"
+  Variável:Camuflagem
+     Pergunta:"Possui abilidade de se camuflar?"
+  Variável:Capa
+     Pergunta:"Usa Capa?"
+  Variável:Chronokinesis
+     Pergunta:"Pode manipular o Tempo com a Mente?"
+  Variável:Cinto com Asas
+     Pergunta:"Usa Cinto com asas?"
+  Variável:Cinto de Utilidades
+     Pergunta:"Usa Cinto de Utilidades?"
+  Variável:Clarevidencia
+     Pergunta:"Possui Clareviência?"
+  Variável:Controle da Mente
+     Pergunta:"Possui Controle da Mente?"
+  Variável:Controle de Densidade
+     Pergunta:"Possui Controle de Densidade?"
+  Variável:Copia as Abilidades dos Animais Próximos
+     Pergunta:"Copia as Abilidades de Animais Próximos?"
+  Variável:Cryokinesis
+     Pergunta:"Pode diminuir a Temperatura com a Mente?"
+  Variável:Durabilidade
+     Pergunta:"Possui Durabilidade?"
+  Variável:Elasticidade
+     Pergunta:"Possui Elasticidade?"
+  Variável:Empatia
+     Pergunta:"Possui Empatia?"
+  Variável:Escudo
+     Pergunta:"Possui Escudo?"
+  Variável:Explosões de Energia
+     Pergunta:"Possui Explosões de Energia?"
+  Variável:Fator de Cura
+     Pergunta:"Possui Fator de Cura?"
+  Variável:Força
+     Pergunta:"Possui Super Força?"
+  Variável:Furtividade
+     Pergunta:"É Furtivo?"
+  Variável:Físico Humano Perfeito
+     Pergunta:"Possui Físico Humano Perfeito?"
+  Variável:Hydrokinesis
+     Pergunta:"Possui Hydrokinesis?"
+  Variável:Hypnokinesis
+     Pergunta:"Possui Hypnokinesis?"
+  Variável:Ilusões
+     Pergunta:"Pode gerar Ilusões?"
+  Variável:Imortalidade
+     Pergunta:"É Imortal?"
+  Variável:Indestrutivel
+     Pergunta:"É Insdestrutível?"
+  Variável:Intangibilidade
+     Pergunta:"É Intangível?"
+  Variável:Inteligencia
+     Pergunta:"Possui Inteligência?"
+  Variável:Invisibilidade
+     Pergunta:"Pode se tornar/é Invisível?"
+  Variável:Invulnerabilidade
+     Pergunta:"Possui Invulnerabilidade?"
+  Variável:Levitação
+     Pergunta:"Pode Levitar?"
+  Variável:Longevidade
+     Pergunta:"Possui Longevidade?"
+  Variável:Magia
+     Pergunta:"Pode conjurar Magias?"
+  Variável:Magnetokinesis
+     Pergunta:"Possui Magnetokinesis?"
+  Variável:Manipulação de energia
+     Pergunta:"Pode manipular energia?"
+  Variável:Manipulação Molecular
+     Pergunta:"Pode manipular moléculas?"
+  Variável:Martelo
+     Pergunta:"Possui um Martelo?"
+  Variável:Mestre em Armas
+     Pergunta:"Mestre em Armas?"
+  Variável:Mudança de Forma
+     Pergunta:"Pode mudar de forma?"
+  Variável:Mudança de Tamanho
+     Pergunta:"Pode mudar de tamanho?"
+  Variável:Omnilingualism
+     Pergunta:"Possui Omnilingualism?"
+  Variável:Phasing
+     Pergunta:"Pode atravessar Objetos?"
+  Variável:Poder da Vontade/Desejo
+     Pergunta:"Possui poder da Vontade/Desejo?"
+  Variável:Poderes Baseados em Armas
+     Pergunta:"Possui Poderes Baseados em Armas?"
+  Variável:Poderes Orientados a Animais
+     Pergunta:"Possui Poderes Orientados a Animais?"
+  Variável:Poderes Psiônicos
+     Pergunta:"Possui Poderes Psiônicos?"
+  Variável:Ponto fraco
+     Pergunta:"Qual seu ponto fraco?"
+  Variável:Precisão
+     Pergunta:"Possui Presisão?"
+  Variável:Projeção Astral
+     Pergunta:"Pode fazer projeção Astral?"
+  Variável:Pyrokinesis
+     Pergunta:"Possui Pyrokinesis?"
+  Variável:Raios de Energia
+     Pergunta:"Pode gerar Raios de Energia?"
+  Variável:Rajada Mental
+     Pergunta:"Possui Rajada Mental?"
+  Variável:Raça
+     Pergunta:"Qual sua Raça?"
+  Variável:Reflexos
+     Pergunta:"Possui rápidos Reflexos?"
+  Variável:Resistência a Controle da Mente
+     Pergunta:"É Resistente a Controle da Mente?"
+  Variável:Resistência a Doenças
+     Pergunta:"É Resistente a Doenças?"
+  Variável:Resistência Física
+     Pergunta:"Possui Resistência Física Humana Perfeita?"
+  Variável:Respiração Subaquática
+     Pergunta:"Posui Respiração subaquática?"
+  Variável:Ressurreição
+     Pergunta:"Pode Ressucitar?"
+  Variável:Rico
+     Pergunta:"É Rico?"
+  Variável:Saltar
+     Pergunta:"Possui super Salto?"
+  Variável:Secreção de Substâncias
+     Pergunta:"Possui abilidade de Secretar Substâncias?"
+  Variável:Sensor de Perigo
+     Pergunta:"Possui Sensor de Perigo?"
+  Variável:Sensor de Poderes
+     Pergunta:"Possui Sensor de Poderes?"
+  Variável:Sentidos Reforçados
+     Pergunta:"Possui sentidos reforçados?"
+  Variável:Sexo
+     Pergunta:"Qual seu sexo?"
+  Variável:Sonar
+     Pergunta:"Possui Sonar?"
+  Variável:Sopro
+     Pergunta:"Possui super Sopro?"
+  Variável:Superpoder
+     Pergunta:"Possui Super Poder?"
+  Variável:Technopath/Cyberpath
+     Pergunta:"Pode controlar Tecnologia com a Mente?"
+  Variável:Telekinesis
+     Pergunta:"Possui Telekinesis?"
+  Variável:Telepatia
+     Pergunta:"Possui Telepatia?"
+  Variável:Teletransporte
+     Pergunta:"Possui Teletransporte?"
+  Variável:Terrakinesis
+     Pergunta:"Pode controlar Terra com a Mente?"
+  Variável:Thermokinesis
+     Pergunta:"Possui Thermokinesis?"
+  Variável:Velocidade
+     Pergunta:"Possui super Velocidade?"
+  Variável:Resistência a Magia
+     Pergunta:"É Resistente a Magia?"
+  Variável:Resistência a Radiação
+     Pergunta:"É Resistente a Radiação?"
+  Variável:Resistência a Telepatia
+     Pergunta:"É Resistente a Telepatia?"
+  Variável:Resistência a Toxinas
+     Pergunta:"É Resistente a Toxinas?"
+  Variável:Resistência ao Calor
+     Pergunta:"É Resistente ao Calor?"
+  Variável:Resistência ao Fogo
+     Pergunta:"É Resistente ao Fogo?"
+  Variável:Resistência ao Frio
+     Pergunta:"É Resistente ao Frio?"
+  Variável:Viagem no Tempo
+     Pergunta:"Pode Viajar no Tempo?"
+  Variável:Vigor
+     Pergunta:"Possui Vigor?"
+  Variável:Visão - Aquecimento
+     Pergunta:"Possui Visão com Aquecimento?"
+  Variável:Visão - Calor
+     Pergunta:"Possui Visão de Calor?"
+  Variável:Visão - Microscópica
+     Pergunta:"Possui Visão Microscópica?"
+  Variável:Visão - Noite
+     Pergunta:"Possui Visão Noturna?"
+  Variável:Visão - Raio X
+     Pergunta:"Possui Visão com Raio X?"
+  Variável:Visão - Telescópica
+     Pergunta:"Possui Visão Telescópica?"
+  Variável:Voar
+     Pergunta:"Pode Voar?"
+  Variável:Wallcrawling
+     Pergunta:"Pode Escalar Paredes?"
+
+--------------------------------------------------------------------------------
+Gerado com o Expert SINTA versão 1.1b
+(c) 1997 - Universidade Federal do Ceará
+           Laboratório de Inteligência Artificial
+           LIA/UFC
+--------------------------------------------------------------------------------
