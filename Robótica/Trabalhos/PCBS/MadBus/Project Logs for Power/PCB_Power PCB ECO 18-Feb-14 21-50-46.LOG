@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=GND Pin=D0-1
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D2-1
+Removed Pin From Net: NetName=GND Pin=D3-1
+Removed Pin From Net: NetName=VCC 9V Pin=P2-1
+Removed Pin From Net: NetName=VCC Pin=P2-2
+Removed Pin From Net: NetName=GND Pin=P2-3
+Removed Pin From Net: NetName=VCC 3V3 Pin=P5-1
+Removed Pin From Net: NetName=GND Pin=P5-3
+Removed Pin From Net: NetName=GND Pin=P5-5
+Removed Pin From Net: NetName=GND Pin=Q0-3
+Removed Pin From Net: NetName=GND Pin=Q1-1
+Removed Pin From Net: NetName=GND Pin=Q2-3
+Removed Pin From Net: NetName=GND Pin=Q3-3
+Removed Pin From Net: NetName=VCC 9V Pin=Q4-3
+Removed Pin From Net: NetName=VCC 9V Pin=Q5-3
+Removed Pin From Net: NetName=GND Pin=Q6-3
+Removed Pin From Net: NetName=GND Pin=Q7-1
+Removed Pin From Net: NetName=GND Pin=Q8-3
+Removed Pin From Net: NetName=GND Pin=Q9-3
+Removed Pin From Net: NetName=VCC Pin=Q10-3
+Removed Pin From Net: NetName=VCC Pin=Q11-3
+Removed Pin From Net: NetName=VCC 9V Pin=R2-1
+Removed Pin From Net: NetName=VCC 9V Pin=R3-2
+Removed Pin From Net: NetName=GND Pin=R6-1
+Removed Pin From Net: NetName=GND Pin=R7-1
+Removed Pin From Net: NetName=GND Pin=R8-1
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=VCC Pin=R14-1
+Removed Pin From Net: NetName=VCC Pin=R15-2
+Removed Pin From Net: NetName=GND Pin=R18-1
+Removed Pin From Net: NetName=GND Pin=R19-1
+Removed Pin From Net: NetName=GND Pin=R20-1
+Removed Pin From Net: NetName=GND Pin=R21-1
