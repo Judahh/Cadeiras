@@ -1,0 +1,26 @@
+1)
+	LOGICA: 
+		MOV A, R0	;A recebe R0
+		CPL A		;A recebe Complemento de R0
+		ANL (A,)R1	;A recebe And de A e R1
+		MOV B, A	;B recebe A
+		MOV A, R2	;A recebe R2
+		ANL A, R3	;A recebe And de R2 e R3
+		CPL A		;A recebe Complemento de A
+		XRL (A,)R4	;A recebe Xor de A e R4
+		ORL A, B	;A recebe Or de A e B
+		LJMP LOGICA	;Volta para o inicio (Loop)
+	Loop{
+		A=(Not(R0) And R1) Or (Not(R2 And R3) Xor R4);
+	}
+
+2)
+	Equation:
+		Mov A,R0
+		Add A,R1
+		Mov B,R3
+		Mul AB
+		Mov 50h,R4
+		CPL C
+		
+		
