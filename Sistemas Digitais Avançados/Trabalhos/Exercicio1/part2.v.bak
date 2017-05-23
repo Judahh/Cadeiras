@@ -1,0 +1,28 @@
+module part2 (SW,LEDG);
+	input [9:0] SW;
+	output [9:0] LEDG;
+	
+	wire [2:0] M;
+	
+	mutex M0(SW[5:3],SW[8:6],SW[9],M);
+	
+	assign LEDG[9:3] = SW[9:3];
+	assign LEDG[2:0] = M;
+	
+endmodule	
+	
+	
+module mutex (X,Y,S,M);
+	input [2:0] X, Y;
+	output [2:0] M;
+	input  S;
+	
+	assign M[0] = (!S&X[0]) | (S&Y[0]);
+	
+	assign M[1] = (!S&X[1]) | (S&Y[1]);
+	
+	assign M[2] = (!S&X[2]) | (S&Y[2]);
+	
+endmodule	
+	
+	

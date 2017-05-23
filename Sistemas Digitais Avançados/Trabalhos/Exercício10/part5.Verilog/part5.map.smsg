@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at part3.v(17): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at part1v1.v(15): always construct contains both blocking and non-blocking assignments

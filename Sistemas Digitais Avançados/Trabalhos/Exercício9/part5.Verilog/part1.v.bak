@@ -1,0 +1,38 @@
+module part1 (Clk, R, S, Q);
+
+	input Clk, R, S;
+	output Q;
+
+	FlipFlopSR_1 SR(R,S,Clk,Q);
+
+endmodule
+
+module FlipFlopSR_1(R,S,Clk,Q);
+	input R,S,Clk;
+	output Qa,Qb
+	
+	wire R_g, S_g, Qa, Qb /* synthesis keep */ ;
+	
+	and (R_g, R, Clk);
+	and (S_g, S, Clk);
+	nor (Qa, R_g, Qb);
+	nor (Qb, S_g, Qa);
+	
+	assign Q = Qa;
+	
+endmodule
+
+module FlipFlopSR_2(R,S,Clk,Q);
+	input R,S,Clk;
+	output Qa,Qb
+	
+	wire R_g, S_g, Qa, Qb /* synthesis keep */ ;
+	
+assign R_g = R & Clk;
+assign S_g = S & Clk;
+assign Qa = ~(R_g j Qb);
+assign Qb = ~(S_g j Qa);
+
+assign Q = Qa;
+
+endmodule	

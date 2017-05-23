@@ -1,0 +1,6 @@
+
+
+C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercicio7/part5.Verilog/my_lpm_ff.v
+
+May 09 02PM:42:45>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

@@ -1,0 +1,245 @@
+|part6
+SW[9] => SW[9].IN4
+SW[8] => SW[8].IN4
+SW[7] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[0] => ~NO_FANOUT~
+HEX0[7] <= shifter:M0.port4
+HEX0[6] <= shifter:M0.port4
+HEX0[5] <= shifter:M0.port4
+HEX0[4] <= shifter:M0.port4
+HEX0[3] <= shifter:M0.port4
+HEX0[2] <= shifter:M0.port4
+HEX0[1] <= shifter:M0.port4
+HEX0[0] <= shifter:M0.port4
+HEX1[7] <= shifter:M1.port4
+HEX1[6] <= shifter:M1.port4
+HEX1[5] <= shifter:M1.port4
+HEX1[4] <= shifter:M1.port4
+HEX1[3] <= shifter:M1.port4
+HEX1[2] <= shifter:M1.port4
+HEX1[1] <= shifter:M1.port4
+HEX1[0] <= shifter:M1.port4
+HEX2[7] <= shifter:M2.port4
+HEX2[6] <= shifter:M2.port4
+HEX2[5] <= shifter:M2.port4
+HEX2[4] <= shifter:M2.port4
+HEX2[3] <= shifter:M2.port4
+HEX2[2] <= shifter:M2.port4
+HEX2[1] <= shifter:M2.port4
+HEX2[0] <= shifter:M2.port4
+HEX3[7] <= shifter:M3.port4
+HEX3[6] <= shifter:M3.port4
+HEX3[5] <= shifter:M3.port4
+HEX3[4] <= shifter:M3.port4
+HEX3[3] <= shifter:M3.port4
+HEX3[2] <= shifter:M3.port4
+HEX3[1] <= shifter:M3.port4
+HEX3[0] <= shifter:M3.port4
+
+
+|part6|shifter:M0
+S1 => M1.IN1
+S1 => M1.IN0
+S1 => M1.IN0
+S1 => M1.IN1
+S0 => M0.IN0
+S0 => M1.IN1
+S0 => M1.IN1
+S0 => M0.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+HEX[7] <= char_7seg:H0.port2
+HEX[6] <= char_7seg:H0.port2
+HEX[5] <= char_7seg:H0.port2
+HEX[4] <= char_7seg:H0.port2
+HEX[3] <= char_7seg:H0.port2
+HEX[2] <= char_7seg:H0.port2
+HEX[1] <= char_7seg:H0.port2
+HEX[0] <= char_7seg:H0.port2
+
+
+|part6|shifter:M0|char_7seg:H0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display[0].DATAIN
+S1 => Display[5].DATAIN
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display[1].DATAIN
+S0 => Display[2].DATAIN
+Display[7] <= <VCC>
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part6|shifter:M1
+S1 => M1.IN1
+S1 => M1.IN0
+S1 => M1.IN0
+S1 => M1.IN1
+S0 => M0.IN0
+S0 => M1.IN1
+S0 => M1.IN1
+S0 => M0.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+HEX[7] <= char_7seg:H0.port2
+HEX[6] <= char_7seg:H0.port2
+HEX[5] <= char_7seg:H0.port2
+HEX[4] <= char_7seg:H0.port2
+HEX[3] <= char_7seg:H0.port2
+HEX[2] <= char_7seg:H0.port2
+HEX[1] <= char_7seg:H0.port2
+HEX[0] <= char_7seg:H0.port2
+
+
+|part6|shifter:M1|char_7seg:H0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display[0].DATAIN
+S1 => Display[5].DATAIN
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display[1].DATAIN
+S0 => Display[2].DATAIN
+Display[7] <= <VCC>
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part6|shifter:M2
+S1 => M1.IN1
+S1 => M1.IN0
+S1 => M1.IN0
+S1 => M1.IN1
+S0 => M0.IN0
+S0 => M1.IN1
+S0 => M1.IN1
+S0 => M0.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+HEX[7] <= char_7seg:H0.port2
+HEX[6] <= char_7seg:H0.port2
+HEX[5] <= char_7seg:H0.port2
+HEX[4] <= char_7seg:H0.port2
+HEX[3] <= char_7seg:H0.port2
+HEX[2] <= char_7seg:H0.port2
+HEX[1] <= char_7seg:H0.port2
+HEX[0] <= char_7seg:H0.port2
+
+
+|part6|shifter:M2|char_7seg:H0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display[0].DATAIN
+S1 => Display[5].DATAIN
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display[1].DATAIN
+S0 => Display[2].DATAIN
+Display[7] <= <VCC>
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part6|shifter:M3
+S1 => M1.IN1
+S1 => M1.IN0
+S1 => M1.IN0
+S1 => M1.IN1
+S0 => M0.IN0
+S0 => M1.IN1
+S0 => M1.IN1
+S0 => M0.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW1 => M1.IN0
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+SW0 => M0.IN1
+SW0 => M1.IN1
+SW0 => M1.IN1
+HEX[7] <= char_7seg:H0.port2
+HEX[6] <= char_7seg:H0.port2
+HEX[5] <= char_7seg:H0.port2
+HEX[4] <= char_7seg:H0.port2
+HEX[3] <= char_7seg:H0.port2
+HEX[2] <= char_7seg:H0.port2
+HEX[1] <= char_7seg:H0.port2
+HEX[0] <= char_7seg:H0.port2
+
+
+|part6|shifter:M3|char_7seg:H0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display.IN0
+S1 => Display[0].DATAIN
+S1 => Display[5].DATAIN
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display.IN1
+S0 => Display[1].DATAIN
+S0 => Display[2].DATAIN
+Display[7] <= <VCC>
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= S0.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+

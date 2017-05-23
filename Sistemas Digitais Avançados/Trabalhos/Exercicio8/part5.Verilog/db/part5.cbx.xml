@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="part5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|part1|ramlpm16bits4:R0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gvh1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

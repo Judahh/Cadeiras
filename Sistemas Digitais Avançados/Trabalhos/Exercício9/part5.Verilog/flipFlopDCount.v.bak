@@ -1,0 +1,17 @@
+module flipFlopDCount(Clk, Clr,En, Q);
+input Clk,Clr, En;
+output reg Q;
+
+always@(posedge clk or negedge Clr)
+begin
+if(Clr)
+begin
+Q = 0;
+end
+else
+	if(enable)
+	begin
+	Q <= Q + 1;
+	end
+end
+endmodule

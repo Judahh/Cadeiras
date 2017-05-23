@@ -1,0 +1,97 @@
+// This is the complete code from Figure 8
+module part5 (SW, HEX0, HEX1, HEX2, HEX3);
+	input  [0:9] SW;		// toggle switches
+	output [0:7] HEX0;	// 7-seg displays
+	output [0:7] HEX1;	// 7-seg displays
+	output [0:7] HEX2;	// 7-seg displays
+	output [0:7] HEX3;	// 7-seg displays
+
+
+	
+	comparatorMaior9(B,EQ);
+	
+	if(EQ == 1)
+	{
+		Z0[3:0] = 10;
+		c1 = 1;
+	}
+	else
+	{
+		z0 = 0;
+		c1 = 0;
+	}
+	
+	
+	
+endmodule
+
+module adder(ci, co, a, b,S);
+	input a, b, ci;
+	output S, c0;
+	
+	wire s1, s2;
+	
+	assign s1 = (a & ~b) | (~a & b);
+	assign S = (ci & ~s1) | (~ci & s1);
+	
+	mutex2to1(s1, b, ci, co);
+	
+	
+endmodule
+
+// implements a 2-bit wide 3-to-1 multiplexer
+module decimalDigit (d, c, b, a, Display);
+	input d, c, b, a;
+	output [0:7] Display;
+
+	assign Display[0] = ~(a|c|(b&d)|~(b|d)); // 3-to-1 multiplexer output
+	assign Display[1] = ~(~b | (c&d) | ~(c|d)); // 3-to-1 multiplexer output
+	assign Display[2] = ~(b | ~c | d); // 3-to-1 multiplexer output
+	assign Display[3] = ~(a |(c&~b) | (c&~d) | ~(b|d) | (b&~c&d)); // 3-to-1 multiplexer output
+	assign Display[4] = ~((c&~d) | ~(b|d)); // 3-to-1 multiplexer output
+	assign Display[5] = ~(a | (b&~c) | (b&~d) | ~(c|d)); // 3-to-1 multiplexer output
+	assign Display[6] = ~(a | (b&~c) | (b&~d) | (~b&c)); // 3-to-1 multiplexer output
+	assign Display[7] = 1; // 3-to-1 multiplexer output
+endmodule	
+
+// Converts 2-bit input code on C1-0 into 7-bit code that produces
+// a character on a 7-segment display. The conversion is defined by:
+// 	 C  1 0		Char
+// 	----------------
+// 	    0 0  	'd'
+// 		0 1		'E'
+// 		1 0 	'0'
+// 		1 1		' ' Blank
+//
+//    
+//
+module char_7seg (SL0, SL1, S0, S1, Display);
+	input [0:1] S0, S1, SL0, SL1;
+	output [0:7] Display;	// output 7-seg code
+
+	/*
+	 *       0  
+	 *      ---  
+	 *     |   |
+	 *    5|   |1
+	 *     | 6 |
+	 *      ---  
+	 *     |   |
+	 *    4|   |2
+	 *     |   |
+	 *      ---  
+	 *       3  
+	 */
+	// the following equations describe display functions in cannonical SOP form
+
+	assign Display[0] = (~S0) & (SL1 & SL1); 
+	assign Display[1] = (~S1) |  S0;
+	assign Display[2] = (S0);
+	assign Display[3] = (S1);
+	assign Display[4] = (~SL0);
+	assign Display[5] = (~SL1);
+	assign Display[6] = (SL0);
+	assign Display[7] = 1;
+
+endmodule
+

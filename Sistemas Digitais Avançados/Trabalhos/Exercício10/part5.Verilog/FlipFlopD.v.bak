@@ -1,0 +1,12 @@
+module FlipFlopD(Clk,D,Q1,Q2);
+	input Clk,D;
+	output Q1,Q2;
+	
+	wire S,R;
+	
+	assign S = D;
+	assign R = ~D;
+	
+	FlipFlopSR SR2(Clk,S,R,Q1,Q2);
+	
+endmodule

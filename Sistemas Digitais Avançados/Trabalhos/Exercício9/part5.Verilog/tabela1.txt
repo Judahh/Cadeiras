@@ -1,0 +1,13 @@
+
+1010 0000
+1011 0001
+1100 0010
+1101 0011
+1110 0100
+1111 0101
+
+4k
+2k2
+
+
+500us pulso do operacional logo apos o trig(low), comeca em alto

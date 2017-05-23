@@ -1,0 +1,315 @@
+|part4
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+HEX0[6] <= segmentDecoder7:SD70.port0
+HEX0[5] <= segmentDecoder7:SD70.port0
+HEX0[4] <= segmentDecoder7:SD70.port0
+HEX0[3] <= segmentDecoder7:SD70.port0
+HEX0[2] <= segmentDecoder7:SD70.port0
+HEX0[1] <= segmentDecoder7:SD70.port0
+HEX0[0] <= segmentDecoder7:SD70.port0
+HEX1[6] <= segmentDecoder7:SD71.port0
+HEX1[5] <= segmentDecoder7:SD71.port0
+HEX1[4] <= segmentDecoder7:SD71.port0
+HEX1[3] <= segmentDecoder7:SD71.port0
+HEX1[2] <= segmentDecoder7:SD71.port0
+HEX1[1] <= segmentDecoder7:SD71.port0
+HEX1[0] <= segmentDecoder7:SD71.port0
+HEX2[6] <= sub9:comb_3.port3
+HEX2[5] <= sub9:comb_3.port3
+HEX2[4] <= sub9:comb_3.port3
+HEX2[3] <= sub9:comb_3.port3
+HEX2[2] <= sub9:comb_3.port3
+HEX2[1] <= sub9:comb_3.port3
+HEX2[0] <= sub9:comb_3.port3
+HEX3[6] <= sub9:comb_3.port4
+HEX3[5] <= sub9:comb_3.port4
+HEX3[4] <= sub9:comb_3.port4
+HEX3[3] <= sub9:comb_3.port4
+HEX3[2] <= sub9:comb_3.port4
+HEX3[1] <= sub9:comb_3.port4
+HEX3[0] <= sub9:comb_3.port4
+LEDG[0] <= <GND>
+LEDG[1] <= <GND>
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+LEDG[8] <= <GND>
+LEDG[9] <= <GND>
+
+
+|part4|segmentDecoder7:SD70
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN1
+D[3] => Display.IN1
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN0
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+
+
+|part4|segmentDecoder7:SD71
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN1
+D[3] => Display.IN1
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN0
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+
+
+|part4|adder4:a4
+ci => ci.IN1
+co[0] <= co[0].DB_MAX_OUTPUT_PORT_TYPE
+co[1] <= co[1].DB_MAX_OUTPUT_PORT_TYPE
+co[2] <= co[2].DB_MAX_OUTPUT_PORT_TYPE
+co[3] <= adder:comb_6.port1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+T[0] <= adder:comb_3.port4
+T[1] <= adder:comb_4.port4
+T[2] <= adder:comb_5.port4
+T[3] <= adder:comb_6.port4
+
+
+|part4|adder4:a4|adder:comb_3
+ci => T.IN1
+ci => co.IN0
+ci => co.IN0
+ci => T.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+a => s1.IN0
+a => co.IN1
+a => co.IN0
+a => s1.IN0
+b => s1.IN1
+b => T.IN1
+b => co.IN1
+b => co.IN1
+b => s1.IN1
+T <= T.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|adder4:a4|adder:comb_4
+ci => T.IN1
+ci => co.IN0
+ci => co.IN0
+ci => T.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+a => s1.IN0
+a => co.IN1
+a => co.IN0
+a => s1.IN0
+b => s1.IN1
+b => T.IN1
+b => co.IN1
+b => co.IN1
+b => s1.IN1
+T <= T.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|adder4:a4|adder:comb_5
+ci => T.IN1
+ci => co.IN0
+ci => co.IN0
+ci => T.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+a => s1.IN0
+a => co.IN1
+a => co.IN0
+a => s1.IN0
+b => s1.IN1
+b => T.IN1
+b => co.IN1
+b => co.IN1
+b => s1.IN1
+T <= T.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|adder4:a4|adder:comb_6
+ci => T.IN1
+ci => co.IN0
+ci => co.IN0
+ci => T.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+a => s1.IN0
+a => co.IN1
+a => co.IN0
+a => s1.IN0
+b => s1.IN1
+b => T.IN1
+b => co.IN1
+b => co.IN1
+b => s1.IN1
+T <= T.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|sub9:comb_3
+ci => cf.IN1
+ci => T1.IN1
+co <= comparatorBiggerThan9:comb_3.port1
+a[0] => T1[0].IN2
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+HEX2[6] <= segmentDecoder7:SD72.port0
+HEX2[5] <= segmentDecoder7:SD72.port0
+HEX2[4] <= segmentDecoder7:SD72.port0
+HEX2[3] <= segmentDecoder7:SD72.port0
+HEX2[2] <= segmentDecoder7:SD72.port0
+HEX2[1] <= segmentDecoder7:SD72.port0
+HEX2[0] <= segmentDecoder7:SD72.port0
+HEX3[6] <= segmentDecoder7:SD73.port0
+HEX3[5] <= segmentDecoder7:SD73.port0
+HEX3[4] <= segmentDecoder7:SD73.port0
+HEX3[3] <= segmentDecoder7:SD73.port0
+HEX3[2] <= segmentDecoder7:SD73.port0
+HEX3[1] <= segmentDecoder7:SD73.port0
+HEX3[0] <= segmentDecoder7:SD73.port0
+
+
+|part4|sub9:comb_3|comparatorBiggerThan9:comb_3
+B[0] => ~NO_FANOUT~
+B[1] => EQ.IN0
+B[2] => EQ.IN1
+B[3] => EQ.IN1
+EQ <= EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|sub9:comb_3|segmentDecoder7:SD72
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN1
+D[3] => Display.IN1
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN0
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+
+
+|part4|sub9:comb_3|segmentDecoder7:SD73
+Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= Display.DB_MAX_OUTPUT_PORT_TYPE
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[3] => Display.IN1
+D[3] => Display.IN1
+D[3] => Display.IN0
+D[3] => Display.IN0
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN1
+D[2] => Display.IN0
+D[2] => Display.IN0
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[1] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+D[0] => Display.IN1
+
+

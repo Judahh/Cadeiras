@@ -1,0 +1,10 @@
+9
+0 337 1464 1846 inf inf inf inf 2704 
+337 0 1235 inf 2342 inf inf inf inf 
+1464 1235 0 802 1121 inf 1391 inf inf 
+1846 inf 802 0 inf 621 740 849 867 
+inf 2342 1121 inf 0 946 1090 inf 1258 
+inf inf inf 621 946 0 184 inf inf 
+inf inf 1391 740 1090 184 0 144 187 
+inf inf inf 849 inf inf 144 0 inf 
+2704 inf inf 867 1258 inf 187 inf 0 

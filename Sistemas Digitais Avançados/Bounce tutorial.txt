@@ -1,0 +1,13 @@
+1 chave clock
+1 chave clear
+
+para 1 clock:
+1->seta o Clear em 1
+2->seta o clock em 1
+3->seta o clock em 0
+4->seta o clock em 1
+5->seta o clock em 0
+6->seta o clear em 0
+7->repete os passos 1 e 6 para garantir
+8->para o próximo clock, repete desde o 1.
+

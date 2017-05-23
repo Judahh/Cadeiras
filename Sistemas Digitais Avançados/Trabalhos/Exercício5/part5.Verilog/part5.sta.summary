@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'counterModK:C2|Q[1]'
+Slack : -3.551
+TNS   : -3.551
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -2.307
+TNS   : -39.875
+
+Type  : Slow 1200mV 85C Model Setup 'counterModK:C1|Q[0]'
+Slack : -1.172
+TNS   : -3.134
+
+Type  : Slow 1200mV 85C Model Setup 'half'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counterModK:C1|Q[0]'
+Slack : -0.283
+TNS   : -0.299
+
+Type  : Slow 1200mV 85C Model Hold 'half'
+Slack : 0.105
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counterModK:C2|Q[1]'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'counterModK:C1|Q[0]'
+Slack : -0.835
+TNS   : -2.836
+
+Type  : Slow 1200mV 85C Model Removal 'counterModK:C1|Q[0]'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -30.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[1]'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counterModK:C1|Q[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'half'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counterModK:C2|Q[1]'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'counterModK:C2|Q[1]'
+Slack : -3.212
+TNS   : -3.212
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.899
+TNS   : -32.309
+
+Type  : Slow 1200mV 0C Model Setup 'counterModK:C1|Q[0]'
+Slack : -0.916
+TNS   : -2.477
+
+Type  : Slow 1200mV 0C Model Setup 'half'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counterModK:C1|Q[0]'
+Slack : -0.233
+TNS   : -0.259
+
+Type  : Slow 1200mV 0C Model Hold 'half'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counterModK:C2|Q[1]'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'counterModK:C1|Q[0]'
+Slack : -0.762
+TNS   : -2.712
+
+Type  : Slow 1200mV 0C Model Removal 'counterModK:C1|Q[0]'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -30.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[1]'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counterModK:C1|Q[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'half'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counterModK:C2|Q[1]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'counterModK:C2|Q[1]'
+Slack : -2.127
+TNS   : -2.127
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.875
+TNS   : -11.499
+
+Type  : Fast 1200mV 0C Model Setup 'counterModK:C1|Q[0]'
+Slack : -0.283
+TNS   : -0.565
+
+Type  : Fast 1200mV 0C Model Setup 'half'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counterModK:C1|Q[0]'
+Slack : -0.267
+TNS   : -0.274
+
+Type  : Fast 1200mV 0C Model Hold 'half'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counterModK:C2|Q[1]'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'counterModK:C1|Q[0]'
+Slack : -0.606
+TNS   : -1.976
+
+Type  : Fast 1200mV 0C Model Removal 'counterModK:C1|Q[0]'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -37.920
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[1]'
+Slack : -3.000
+TNS   : -14.339
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counterModK:C1|Q[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'half'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counterModK:C2|Q[1]'
+Slack : 0.420
+TNS   : 0.000
+
+------------------------------------------------------------

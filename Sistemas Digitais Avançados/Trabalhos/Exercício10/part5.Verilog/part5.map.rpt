@@ -1,0 +1,304 @@
+Analysis & Synthesis report for part5
+Fri May 30 16:38:41 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Fri May 30 16:38:41 2014          ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; part5                                      ;
+; Top-level Entity Name              ; part1                                      ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; part1              ; part5              ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                      ;
++--------+--------------+---------+--------------+--------------+--------------------------+-------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance          ; IP Include File                                                                                 ;
++--------+--------------+---------+--------------+--------------+--------------------------+-------------------------------------------------------------------------------------------------+
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |part1|proc:P0|addsub:AS ; C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/addsub.v ;
++--------+--------------+---------+--------------+--------------+--------------------------+-------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Fri May 30 16:38:37 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part5 -c part5
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file part1.v
+    Info (12023): Found entity 1: part1
+Info (12021): Found 1 design units, including 1 entities, in source file addsub.v
+    Info (12023): Found entity 1: addsub
+Info (12021): Found 1 design units, including 1 entities, in source file counter.v
+    Info (12023): Found entity 1: counter
+Warning (12019): Can't analyze file -- file part5.v is missing
+Warning (12019): Can't analyze file -- file part4.v is missing
+Warning (12019): Can't analyze file -- file part2.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file hexd.v
+    Info (12023): Found entity 1: hexD
+Info (12021): Found 1 design units, including 1 entities, in source file b2dd.v
+    Info (12023): Found entity 1: b2dD
+Warning (12019): Can't analyze file -- file part3.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.v
+    Info (12023): Found entity 1: DeBounce
+Info (12021): Found 1 design units, including 1 entities, in source file countermodk.v
+    Info (12023): Found entity 1: counterModK
+Warning (12019): Can't analyze file -- file part1v1.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ram16bits.v
+    Info (12023): Found entity 1: ram16bits
+Info (12021): Found 1 design units, including 1 entities, in source file ramlpm16bits4.v
+    Info (12023): Found entity 1: ramlpm16bits4
+Info (12021): Found 1 design units, including 1 entities, in source file rom1port.v
+    Info (12023): Found entity 1: Rom1Port
+Warning (10236): Verilog HDL Implicit Net warning at part1.v(23): created implicit net for "MClock"
+Warning (10236): Verilog HDL Implicit Net warning at part1.v(24): created implicit net for "PClock"
+Critical Warning (10846): Verilog HDL Instantiation warning at part1.v(53): instance has no name
+Info (12127): Elaborating entity "part1" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at part1.v(12): object "SSDen" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at part1.v(31): truncated value with size 16 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at part1.v(33): truncated value with size 16 to match size of target (9)
+Warning (10270): Verilog HDL Case Statement warning at part1.v(44): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at part1.v(40): inferring latch(es) for variable "DIN", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "DIN[0]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[1]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[2]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[3]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[4]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[5]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[6]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[7]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[8]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[9]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[10]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[11]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[12]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[13]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[14]" at part1.v(40)
+Info (10041): Inferred latch for "DIN[15]" at part1.v(40)
+Warning (12125): Using design file proc.v, which is not specified as a design file for the current project, but contains definitions for 3 design units and 3 entities in project
+    Info (12023): Found entity 1: proc
+    Info (12023): Found entity 2: upcount
+    Info (12023): Found entity 3: dec3to8
+Info (12128): Elaborating entity "proc" for hierarchy "proc:P0"
+Warning (10235): Verilog HDL Always Construct warning at proc.v(94): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at proc.v(58): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(102): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(128): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(45): incomplete case statement has no default case item
+Warning (10235): Verilog HDL Always Construct warning at proc.v(176): variable "DIN" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(177): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(178): variable "R0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(179): variable "R1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(180): variable "R2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(181): variable "R3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(182): variable "R4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(183): variable "R5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(184): variable "R6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(185): variable "R7" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at proc.v(175): incomplete case statement has no default case item
+Info (10264): Verilog HDL Case Statement information at proc.v(175): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at proc.v(169): inferring latch(es) for variable "BusWires", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "BusWires[0]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[1]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[2]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[3]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[4]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[5]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[6]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[7]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[8]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[9]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[10]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[11]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[12]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[13]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[14]" at proc.v(169)
+Info (10041): Inferred latch for "BusWires[15]" at proc.v(169)
+Info (12128): Elaborating entity "upcount" for hierarchy "proc:P0|upcount:Tstep"
+Info (12128): Elaborating entity "dec3to8" for hierarchy "proc:P0|dec3to8:decX"
+Info (12128): Elaborating entity "addsub" for hierarchy "proc:P0|addsub:AS"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "proc:P0|addsub:AS|lpm_add_sub:lpm_add_sub_component"
+Info (12130): Elaborated megafunction instantiation "proc:P0|addsub:AS|lpm_add_sub:lpm_add_sub_component"
+Info (12133): Instantiated megafunction "proc:P0|addsub:AS|lpm_add_sub:lpm_add_sub_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "UNUSED"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_3ng.tdf
+    Info (12023): Found entity 1: add_sub_3ng
+Info (12128): Elaborating entity "add_sub_3ng" for hierarchy "proc:P0|addsub:AS|lpm_add_sub:lpm_add_sub_component|add_sub_3ng:auto_generated"
+Error (12006): Node instance "C_new" instantiates undefined entity "counter_modk" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 18
+Error (12006): Node instance "reg_0" instantiates undefined entity "counterlpm" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 147
+Error (12006): Node instance "reg_1" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 148
+Error (12006): Node instance "reg_2" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 149
+Error (12006): Node instance "reg_3" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 150
+Error (12006): Node instance "reg_4" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 151
+Error (12006): Node instance "reg_5" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 152
+Error (12006): Node instance "reg_6" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 153
+Error (12006): Node instance "reg_7" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 154
+Error (12006): Node instance "reg_IR" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 156
+Error (12006): Node instance "reg_A" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 158
+Error (12006): Node instance "reg_G" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 159
+Error (12006): Node instance "reg_ADDR" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 161
+Error (12006): Node instance "reg_DOUT" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 162
+Error (12006): Node instance "reg_W" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/proc.v Line: 163
+Error (12006): Node instance "LEDs" instantiates undefined entity "regn" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 51
+Error (12006): Node instance "Memory" instantiates undefined entity "ramlpm" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 52
+Error (12006): Node instance "comb_77" instantiates undefined entity "port_n" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 53
+Error (12006): Node instance "H0" instantiates undefined entity "hex_ssd" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 55
+Error (12006): Node instance "H1" instantiates undefined entity "hex_ssd" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 56
+Error (12006): Node instance "H2" instantiates undefined entity "hex_ssd" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 57
+Error (12006): Node instance "H3" instantiates undefined entity "hex_ssd" File: C:/Users/Judah/Dropbox/Sistemas Digitais Avançados/Trabalhos/Exercício10/part5.Verilog/part1.v Line: 58
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 22 errors, 32 warnings
+    Error: Peak virtual memory: 459 megabytes
+    Error: Processing ended: Fri May 30 16:38:41 2014
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:01
+
+
