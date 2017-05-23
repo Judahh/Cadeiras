@@ -1,7 +1,0 @@
-<!DOCTYPE html>
-<head>
-	<jsp:include page="../basic/head.jsp"/>
-</head>
-<body>
-	<div class="container">
-	<jsp:include page="../basic/header.jsp"/>

@@ -1,1 +1,0 @@
-Ler os pinos, joga na ram, depois ler da ram e joga no display

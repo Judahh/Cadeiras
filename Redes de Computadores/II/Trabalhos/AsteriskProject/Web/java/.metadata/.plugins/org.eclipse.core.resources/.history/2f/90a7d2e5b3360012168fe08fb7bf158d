@@ -1,8 +1,0 @@
-package redes2;
-
-public class EXTContext extends BasicModel {
-	
-	public String getWriteprotect() {
-		return get("asdasdasd");
-	}
-}

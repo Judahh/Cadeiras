@@ -1,7 +1,0 @@
-package redes2;
-
-public class Agent extends BasicModel {
-	private String secret;
-	private String username;
-
-}

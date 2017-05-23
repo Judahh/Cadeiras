@@ -1,4 +1,0 @@
-<%@page import="redes2.*"%>
-<div id="info" class="grid col-three-quarters mq2-col-full">
-<%=MonitorFacade.teste()%>
-</div>
